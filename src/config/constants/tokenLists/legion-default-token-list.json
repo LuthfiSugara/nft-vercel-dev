@@ -1,0 +1,93 @@
+{
+    "name": "Pancakeswap Default List",
+    "timestamp": "2021-05-06T00:00:00Z",
+    "version": {
+        "major": 3,
+        "minor": 0,
+        "patch": 0
+    },
+    "tags": {},
+    "logoURI": "https://pancakeswap.finance/logo.png",
+    "keywords": ["pancake", "default"],
+    "tokens": [{
+            "name": "BUSD Token",
+            "symbol": "BUSD",
+            "address": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
+            "chainId": 56,
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/aulyaaryansyah-git/token-icons/master/busd.png"
+        },
+        {
+            "name": "Tether USD",
+            "symbol": "USDT",
+            "address": "0x55d398326f99059fF775485246999027B3197955",
+            "chainId": 56,
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/aulyaaryansyah-git/token-icons/master/usdt.png"
+        },
+        {
+            "name": "GICT Token",
+            "symbol": "WGICT",
+            "address": "0x27B2D695eF01d10EE96582a23db201B0Aa338639",
+            "chainId": 56,
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/aulyaaryansyah-git/token-icons/master/wgict.png"
+        },
+        {
+            "name": "Cardano",
+            "symbol": "ADA",
+            "address": "0x3EE2200Efb3400fAbB9AacF31297cBdD1d435D47",
+            "chainId": 56,
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/aulyaaryansyah-git/token-icons/master/ada.png"
+        },
+        {
+            "name": "TokoCrypto",
+            "symbol": "TKO",
+            "address": "0x9f589e3eabe42ebC94A44727b3f3531C0c877809",
+            "chainId": 56,
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/aulyaaryansyah-git/token-icons/master/tko.png"
+        },
+        {
+            "name": "Ethereum Token",
+            "symbol": "ETH",
+            "address": "0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
+            "chainId": 56,
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/aulyaaryansyah-git/token-icons/master/eth.png"
+        },
+        {
+            "name": "WBNB Token",
+            "symbol": "WBNB",
+            "address": "0x094616F0BdFB0b526bD735Bf66Eca0Ad254ca81F",
+            "chainId": 97,
+            "decimals": 18,
+            "logoURI": "https://pancakeswap.finance/images/tokens/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c.png"
+        },
+        {
+            "name": "BUSD Token",
+            "symbol": "BUSD",
+            "address": "0xeD24FC36d5Ee211Ea25A80239Fb8C4Cfd80f12Ee",
+            "chainId": 97,
+            "decimals": 18,
+            "logoURI": "https://pancakeswap.finance/images/tokens/0xe9e7cea3dedca5984780bafc599bd69add087d56.png"
+        },
+        {
+            "name": "Legion",
+            "symbol": "LGN",
+            "address": "0xA2AE69726F69198f1A83c01380c121e3153A81f0",
+            "chainId": 97,
+            "decimals": 18,
+            "logoURI": "https://pancakeswap.finance/images/tokens/0x8076c74c5e3f5852037f31ff0093eeb8c8add8d3.png"
+        },
+        {
+            "name": "GICT Token",
+            "symbol": "WGICT",
+            "address": "0x27B2D695eF01d10EE96582a23db201B0Aa338639",
+            "chainId": 97,
+            "decimals": 8,
+            "logoURI": "https://pancakeswap.finance/images/tokens/0x8076c74c5e3f5852037f31ff0093eeb8c8add8d3.png"
+        }
+    ]
+}

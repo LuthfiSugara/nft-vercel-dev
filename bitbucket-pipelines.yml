@@ -1,0 +1,39 @@
+image: node:14.17.6
+
+pipelines:
+  branches:
+    main:
+      - step:
+          name: Code Coverage
+          caches:
+            - node
+          script:
+            - yarn install
+            - yarn lint
+            - yarn format:check
+      - step:
+          name: Build Test
+          caches:
+            - node
+          script:
+            - yarn install
+            - yarn build
+  pull-requests:
+    "**":
+      - parallel:
+          - step:
+              name: Code Coverage
+              caches:
+                - node
+              script:
+                - yarn install
+                - yarn lint
+                - yarn ts:check
+                - yarn format:check
+          - step:
+              name: Build Test
+              caches:
+                - node
+              script:
+                - yarn install
+                - yarn build
