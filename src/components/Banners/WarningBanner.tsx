@@ -9,7 +9,7 @@ interface WarningBannerProps extends Omit<AlertProps, 'title'> {
 
 const WarningBanner = ({ title = '', description = '', ...rest }: WarningBannerProps) => {
   return (
-    <Alert status="warning" borderColor="legion.primary" borderWidth="1px" alignItems="start" rounded="lg" {...rest}>
+    <Alert status="warning" borderColor="gicv.primary" borderWidth="1px" alignItems="start" rounded="lg" {...rest}>
       <AlertIcon boxSize="5" as={WarningTwoIcon} />
       <VStack flex="1" align="start">
         <AlertTitle fontWeight="bold">{title}</AlertTitle>

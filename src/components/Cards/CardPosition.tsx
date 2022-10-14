@@ -58,11 +58,11 @@ export const MinimalPositionCard: FC<PositionCardProps> = ({ pair, showUnwrapped
   return (
     <>
       {userPoolBalance && JSBI.greaterThan(userPoolBalance.raw, JSBI.BigInt(0)) ? (
-        <Box w="full" p="4" bg="legion.dark" rounded="2xl" borderWidth="1px" borderColor="legion.light">
+        <Box w="full" p="4" bg="gicv.dark" rounded="2xl" borderWidth="1px" borderColor="gicv.light">
           <VStack spacing="4" align="stretch">
             <FixedHeightRow w="full">
               <Flex>
-                <Text color="legion.gray.200" fontWeight="bold">
+                <Text color="gicv.gray.200" fontWeight="bold">
                   {t('LP tokens in your wallet')}
                 </Text>
               </Flex>
@@ -70,34 +70,34 @@ export const MinimalPositionCard: FC<PositionCardProps> = ({ pair, showUnwrapped
             <FixedHeightRow onClick={() => setShowMore(!showMore)}>
               <Flex align="center">
                 <DoubleCurrencyLogo currency0={currency0} currency1={currency1} margin size={20} />
-                <Text color="legion.secondary">
+                <Text color="gicv.secondary">
                   {currency0.symbol}-{currency1.symbol} LP
                 </Text>
               </Flex>
               <Flex>
-                <Text color="legion.gray.200">{userPoolBalance ? userPoolBalance.toSignificant(4) : '-'}</Text>
+                <Text color="gicv.gray.200">{userPoolBalance ? userPoolBalance.toSignificant(4) : '-'}</Text>
               </Flex>
             </FixedHeightRow>
             <VStack spacing="2" align="stretch" w="full">
               <FixedHeightRow>
-                <Text color="legion.secondary">{t('Share of Pool')}:</Text>
-                <Text color="legion.gray.200">{poolTokenPercentage ? `${poolTokenPercentage.toFixed(6)}%` : '-'}</Text>
+                <Text color="gicv.secondary">{t('Share of Pool')}:</Text>
+                <Text color="gicv.gray.200">{poolTokenPercentage ? `${poolTokenPercentage.toFixed(6)}%` : '-'}</Text>
               </FixedHeightRow>
               <FixedHeightRow>
-                <Text color="legion.secondary">{t('Pooled %asset%', { asset: currency0.symbol })}:</Text>
+                <Text color="gicv.secondary">{t('Pooled %asset%', { asset: currency0.symbol })}:</Text>
                 {token0Deposited ? (
                   <Flex>
-                    <Text color="legion.gray.200">{token0Deposited?.toSignificant(6)}</Text>
+                    <Text color="gicv.gray.200">{token0Deposited?.toSignificant(6)}</Text>
                   </Flex>
                 ) : (
                   '-'
                 )}
               </FixedHeightRow>
               <FixedHeightRow>
-                <Text color="legion.secondary">{`Pooled ${currency1.symbol}`}:</Text>
+                <Text color="gicv.secondary">{`Pooled ${currency1.symbol}`}:</Text>
                 {token1Deposited ? (
                   <Flex>
-                    <Text color="legion.gray.200">{token1Deposited?.toSignificant(6)}</Text>
+                    <Text color="gicv.gray.200">{token1Deposited?.toSignificant(6)}</Text>
                   </Flex>
                 ) : (
                   '-'
@@ -107,7 +107,7 @@ export const MinimalPositionCard: FC<PositionCardProps> = ({ pair, showUnwrapped
           </VStack>
         </Box>
       ) : (
-        <Box p="4" bg="legion.dark" rounded="2xl">
+        <Box p="4" bg="gicv.dark" rounded="2xl">
           <Text fontSize="14px" style={{ textAlign: 'center' }}>
             <span role="img" aria-label="pancake-icon">
               🥞
@@ -151,14 +151,14 @@ export default function FullPositionCard({ pair, ...props }: PositionCardProps) 
       : [undefined, undefined]
 
   return (
-    <Box rounded="3xl" {...props} bg="legion.dark" boxShadow="2xl">
+    <Box rounded="3xl" {...props} bg="gicv.dark" boxShadow="2xl">
       <Flex justifyContent="space-between" role="button" onClick={() => setShowMore(!showMore)} p="16px" align="center">
         <Flex flexDirection="column">
           <Flex alignItems="center" mb="2">
             <DoubleCurrencyLogo currency0={currency0} currency1={currency1} size={20} />
             <Text ml="8px">{!currency0 || !currency1 ? <Spinner /> : `${currency0.symbol}/${currency1.symbol}`}</Text>
           </Flex>
-          <Text fontSize="14px" color="legion.gray.200">
+          <Text fontSize="14px" color="gicv.gray.200">
             {userPoolBalance?.toSignificant(4)}
           </Text>
         </Flex>
@@ -170,7 +170,7 @@ export default function FullPositionCard({ pair, ...props }: PositionCardProps) 
           <FixedHeightRow justify="space-between">
             <Flex align="center">
               <CurrencyLogo size={20} currency={currency0} />
-              <Text color="legion.gray.200" ml="4px">
+              <Text color="gicv.gray.200" ml="4px">
                 Pooled {currency0.symbol}
               </Text>
             </Flex>
@@ -186,7 +186,7 @@ export default function FullPositionCard({ pair, ...props }: PositionCardProps) 
           <FixedHeightRow justify="space-between">
             <Flex align="center">
               <CurrencyLogo size={20} currency={currency1} />
-              <Text color="legion.gray.200" ml="4px">
+              <Text color="gicv.gray.200" ml="4px">
                 Pooled {currency1.symbol}
               </Text>
             </Flex>
@@ -200,7 +200,7 @@ export default function FullPositionCard({ pair, ...props }: PositionCardProps) 
           </FixedHeightRow>
 
           <FixedHeightRow justify="space-between">
-            <Text color="legion.gray.200">{t('Share of pool')}</Text>
+            <Text color="gicv.gray.200">{t('Share of pool')}</Text>
             <Text>
               {poolTokenPercentage
                 ? `${poolTokenPercentage.toFixed(2) === '0.00' ? '<0.01' : poolTokenPercentage.toFixed(2)}%`

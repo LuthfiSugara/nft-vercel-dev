@@ -92,7 +92,7 @@ const ModalTokenSelectionImportView = ({ token, onTokenSelect, setModalView }) =
                 as="a"
                 variant="link"
                 backgroundColor="inherit"
-                color="legion.primary"
+                color="gicv.primary"
                 cursor="pointer"
                 target="_blank"
                 rel="noopener noreferrer"

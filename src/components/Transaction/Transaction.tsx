@@ -36,14 +36,8 @@ export default function Transaction({ tx }: { tx: TransactionDetails }) {
       >
         {summary ?? tx.hash}
       </Button>
-      <Box color={pending ? 'legion.main.200' : success ? 'legion.success' : 'legion.error'}>
-        {pending ? (
-          <SpinnerIcon />
-        ) : success ? (
-          <CheckIcon color="legion.success" />
-        ) : (
-          <WarningIcon color="legion.error" />
-        )}
+      <Box color={pending ? 'gicv.main.200' : success ? 'gicv.success' : 'gicv.error'}>
+        {pending ? <SpinnerIcon /> : success ? <CheckIcon color="gicv.success" /> : <WarningIcon color="gicv.error" />}
       </Box>
     </TransactionState>
   )

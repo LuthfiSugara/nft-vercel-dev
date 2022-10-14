@@ -22,7 +22,7 @@ const SidebarToolkit = () => {
                 fontSize="17px"
                 lineHeight="16.5px"
                 letterSpacing="wider"
-                color="legion.secondary"
+                color="gicv.secondary"
               >
                 ${price?.toFixed(3)}
               </Text>

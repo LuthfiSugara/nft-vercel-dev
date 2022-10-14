@@ -37,7 +37,7 @@ const ModalWalletAccount = ({ onDismiss, isOpen }: InjectedModalProps) => {
         <ModalHeader>{t('Your Wallet')}</ModalHeader>
         <ModalBody borderTop="1px" borderTopColor="brand.bg.8" p="0">
           <Tabs variant="solid-rounded" colorScheme="primary" isFitted mt="4">
-            <TabList bg="legion.light" p="4">
+            <TabList bg="gicv.light" p="4">
               <Tab>{t('Wallet')}</Tab>
               <Tab>{t('Transactions')}</Tab>
             </TabList>

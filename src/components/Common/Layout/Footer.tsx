@@ -6,16 +6,16 @@ import Image from 'next/image'
 
 const Footer: React.FC<BoxProps> = (props) => {
   return (
-    <Box pos={'relative'} bg={'legion.light'} px={'8vw'} py={['12vw', '12vw', '3.5vw']} {...props}>
+    <Box pos={'relative'} px={'8vw'} py={['12vw', '12vw', '3.5vw']} {...props}>
       <Grid
         templateRows={['repeat(2, 1fr)', 'repeat(2, 1fr)', 'repeat(1, 1fr)', 'repeat(1, 1fr)']}
         templateColumns={['repeat(2, 1fr)', 'repeat(2, 1fr)', 'repeat(6, 1fr)', 'repeat(7, 1fr)']}
         gap={4}
       >
         <GridItem rowSpan={1} colSpan={[2, 2, 3]} display={'flex'} justifyContent={'center'}>
-          <Center w={['53vw', '53vw', '14vw']}>
+          {/* <Center w={['53vw', '53vw', '14vw']}>
             <Image src={footerItems.footerLogoIcon} alt={''} placeholder={'blur'} />
-          </Center>
+          </Center> */}
         </GridItem>
         <GridItem rowSpan={1} colSpan={1} display={'flex'} justifyContent={'center'}>
           <Box>

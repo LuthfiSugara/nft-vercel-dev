@@ -24,15 +24,15 @@ const ChildItem = ({ handleChildMenuClicked, child }: ChildItemProps) => {
     <MenuItem
       px={['18vw', '18vw', '5.25vw']}
       py={['3vw', '3vw', '1vw']}
-      bg="legion.light"
+      bg="gicv.light"
       borderLeft={['1vw solid', '1vw solid', '0.3vw solid']}
-      _hover={{ bg: 'legion.overlay' }}
-      _focus={{ bg: 'legion.dark' }}
+      _hover={{ bg: 'gicv.overlay' }}
+      _focus={{ bg: 'gicv.dark' }}
       onClick={() => handleChildMenuClicked(child.path)}
       borderLeftColor={[
-        isChildActive ? 'legion.primary' : 'transparent',
-        isChildActive ? 'legion.primary' : 'transparent',
-        isChildActive ? 'legion.primary' : 'transparent',
+        isChildActive ? 'gicv.primary' : 'transparent',
+        isChildActive ? 'gicv.primary' : 'transparent',
+        isChildActive ? 'gicv.primary' : 'transparent',
       ]}
     >
       <Flex display="flex" alignItems="center">
@@ -97,13 +97,13 @@ const SidebarItem = ({ menu }: SidebarItemProps) => {
         display="block"
         overflowX="hidden"
         borderLeft={['1vw solid', '1vw solid', '0.3vw solid']}
-        _hover={{ bg: 'legion.overlay' }}
-        _focus={{ bg: 'legion.dark' }}
+        _hover={{ bg: 'gicv.overlay' }}
+        _focus={{ bg: 'gicv.dark' }}
         onClick={handleParentMenuClicked}
         borderLeftColor={[
-          isParentActive ? 'legion.primary' : 'transparent',
-          isParentActive ? 'legion.primary' : 'transparent',
-          isParentActive ? 'legion.primary' : 'transparent',
+          isParentActive ? 'gicv.primary' : 'transparent',
+          isParentActive ? 'gicv.primary' : 'transparent',
+          isParentActive ? 'gicv.primary' : 'transparent',
         ]}
       >
         <Box display="flex" alignItems="center">

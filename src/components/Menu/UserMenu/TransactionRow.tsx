@@ -39,9 +39,9 @@ const renderIcon = (txn: TransactionDetails) => {
   }
 
   return txn.receipt?.status === 1 || typeof txn.receipt?.status === 'undefined' ? (
-    <CheckIcon color="legion.success" boxSize={5} />
+    <CheckIcon color="gicv.success" boxSize={5} />
   ) : (
-    <NotAllowedIcon color="legion.error" boxSize={5} />
+    <NotAllowedIcon color="gicv.error" boxSize={5} />
   )
 }
 

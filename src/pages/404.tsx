@@ -7,8 +7,8 @@ export default function NotFoundPage() {
   const { t } = useTranslation()
   return (
     <Layout>
-      <SEO description={t('Oops, page not found.')} />
-      <Container color={'legion.light'} maxW="100%" h="80vh">
+      <SEO title={'404 | Not Found'} description={t('Oops, page not found.')} />
+      <Container color={'gicv.dark'} maxW="100%" h="80vh">
         <Center h="full">
           <VStack>
             <Heading fontSize="5xl">404</Heading>

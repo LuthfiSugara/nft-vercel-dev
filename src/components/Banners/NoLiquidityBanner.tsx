@@ -6,7 +6,7 @@ import { memo } from 'react'
 const NoLiquidityBanner = () => {
   const { t } = useTranslation()
   return (
-    <Alert status="warning" borderColor="legion.primary" borderWidth="1px" alignItems="start" rounded="lg">
+    <Alert status="warning" borderColor="gicv.primary" borderWidth="1px" alignItems="start" rounded="lg">
       <AlertIcon boxSize="5" as={WarningTwoIcon} />
       <VStack flex="1" align="start">
         <AlertTitle fontWeight="bold">{t('You are the first liquidity provider.')}</AlertTitle>

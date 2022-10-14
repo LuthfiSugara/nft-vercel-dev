@@ -13,10 +13,10 @@ export default function LiveSwitch() {
   }
   return (
     <HStack spacing={4}>
-      <ButtonGroup rounded="3xl" bg="legion.dark" variant="ghost" size="sm">
+      <ButtonGroup rounded="3xl" bg="gicv.dark" variant="ghost" size="sm">
         <Button
           isActive={table === 'live'}
-          _active={{ bg: 'legion.primary' }}
+          _active={{ bg: 'gicv.primary' }}
           onClick={() => handleSwitchLive('live')}
           rounded="3xl"
           px="4"
@@ -27,7 +27,7 @@ export default function LiveSwitch() {
         </Button>
         <Button
           isActive={table === 'finished'}
-          _active={{ bg: 'legion.primary' }}
+          _active={{ bg: 'gicv.primary' }}
           onClick={() => handleSwitchLive('finished')}
           rounded="3xl"
           px="4"
@@ -38,7 +38,7 @@ export default function LiveSwitch() {
         </Button>
       </ButtonGroup>
       <HStack spacing={2}>
-        <Switch _checked={{ bgColor: 'legion.primary' }} />
+        <Switch _checked={{ bgColor: 'gicv.primary' }} />
         <Text fontWeight="bold" letterSpacing="wide">
           Staked Only
         </Text>

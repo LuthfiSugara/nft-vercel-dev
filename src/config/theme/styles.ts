@@ -5,8 +5,8 @@ export const customStyles = {
   global: (props) => ({
     body: {
       fontFamily: `"Montserrat","Kanit", sans-serif`,
-      bg: mode('white', '#FFF1E0')(props),
-      color: mode('#25282B', 'white')(props),
+      bg: mode('white', 'black')(props),
+      color: mode('black', 'white')(props),
       ...withCustomScrollBar('6px'),
     },
   }),

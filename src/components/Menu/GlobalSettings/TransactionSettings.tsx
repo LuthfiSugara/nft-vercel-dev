@@ -95,7 +95,7 @@ const TransactionSettings = () => {
             }}
             colorScheme="primary"
             color="white"
-            bgColor={userSlippageTolerance === 10 ? 'legion.primary' : 'legion.light'}
+            bgColor={userSlippageTolerance === 10 ? 'gicv.primary' : 'gicv.light'}
           >
             0.1%
           </Button>
@@ -110,7 +110,7 @@ const TransactionSettings = () => {
             }}
             colorScheme="primary"
             color="white"
-            bgColor={userSlippageTolerance === 50 ? 'legion.primary' : 'legion.light'}
+            bgColor={userSlippageTolerance === 50 ? 'gicv.primary' : 'gicv.light'}
           >
             0.5%
           </Button>
@@ -125,7 +125,7 @@ const TransactionSettings = () => {
             }}
             colorScheme="primary"
             color="white"
-            bgColor={userSlippageTolerance === 100 ? 'legion.primary' : 'legion.light'}
+            bgColor={userSlippageTolerance === 100 ? 'gicv.primary' : 'gicv.light'}
           >
             1.0%
           </Button>
@@ -178,7 +178,7 @@ const TransactionSettings = () => {
           <Box width="52px" mt="4px">
             <Input
               scale="sm"
-              color={deadlineError ? 'legion.error' : undefined}
+              color={deadlineError ? 'gicv.error' : undefined}
               onBlur={() => {
                 parseCustomDeadline((ttl / 60).toString())
               }}

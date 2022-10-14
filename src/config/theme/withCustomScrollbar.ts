@@ -1,6 +1,6 @@
 export const withCustomScrollBar = (
   width: any = '4px',
-  backgroundColor = 'legion.primary',
+  backgroundColor = 'gicv.primary',
   overlayColor = 'transparent'
 ) => ({
   '&::-webkit-scrollbar': {

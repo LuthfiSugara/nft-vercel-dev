@@ -47,8 +47,8 @@ const Address = styled.div`
 
 const Tooltip = styled.div<{ isTooltipDisplayed: boolean }>`
   display: ${({ isTooltipDisplayed }) => (isTooltipDisplayed ? 'inline-block' : 'none')};
-  background-color: ${theme.colors.legion.gray[200]};
-  color: ${theme.colors.legion.dark};
+  background-color: ${theme.colors.gicv.gray[200]};
+  color: ${theme.colors.gicv.dark};
   position: absolute;
   padding: 8px;
   top: -38px;
@@ -69,7 +69,7 @@ const CopyAddress: React.FC<CopyAddressProps> = ({ account, ...props }) => {
 
   return (
     <Box position="relative" {...props}>
-      <Wrapper bg="legion.light" p="2">
+      <Wrapper bg="gicv.light" p="2">
         <Address title={account}>
           <input type="text" readOnly value={account} />
         </Address>

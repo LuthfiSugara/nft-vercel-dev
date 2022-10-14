@@ -21,10 +21,10 @@ interface ModalInputProps {
 
 // const getBoxShadow = ({ isWarning = false, theme }) => {
 //   if (isWarning) {
-//     return theme.colors.legion.warning
+//     return theme.colors.gicv.warning
 //   }
 
-//   return theme.colors.legion.info
+//   return theme.colors.gicv.info
 // }
 
 const StyledTokenInput = styled.div<InputProps>`
@@ -62,7 +62,7 @@ const ModalInput: React.FC<ModalInputProps> = ({
   addLiquidityUrl,
   inputTitle,
   decimals = 18,
-  onDismiss
+  onDismiss,
 }) => {
   const { t } = useTranslation()
   const isBalanceZero = max === '0' || !max
@@ -79,7 +79,7 @@ const ModalInput: React.FC<ModalInputProps> = ({
   return (
     <div style={{ position: 'relative' }}>
       <StyledTokenInput>
-      {/* <StyledTokenInput> */}
+        {/* <StyledTokenInput> */}
         <Flex justifyContent="space-between">
           <Text fontSize="14px">{inputTitle}</Text>
           <Text fontSize="14px">{t('Balance: %balance%', { balance: displayBalance(max) })}</Text>
@@ -94,14 +94,7 @@ const ModalInput: React.FC<ModalInputProps> = ({
             placeholder="0"
             value={value}
           />
-          <Button 
-            colorScheme="primary" 
-            color="white" 
-            size="md" 
-            scale="sm" 
-            mx="10px"
-            onClick={onSelectMax}
-            >
+          <Button colorScheme="primary" color="white" size="md" scale="sm" mx="10px" onClick={onSelectMax}>
             {t('Max')}
           </Button>
           <Text fontSize="16px">{symbol}</Text>
@@ -110,15 +103,11 @@ const ModalInput: React.FC<ModalInputProps> = ({
       {isBalanceZero && (
         <StyledErrorMessage fontSize="14px" color="failure">
           {t('No tokens to stake')}:{' '}
-          {
-            addLiquidityUrl && (
-              <Link href={addLiquidityUrl}>
-                <a onClick={onDismiss}>
-                  {t('Get %symbol%', { symbol })}
-                </a>
-              </Link>
-            )
-          }
+          {addLiquidityUrl && (
+            <Link href={addLiquidityUrl}>
+              <a onClick={onDismiss}>{t('Get %symbol%', { symbol })}</a>
+            </Link>
+          )}
         </StyledErrorMessage>
       )}
     </div>

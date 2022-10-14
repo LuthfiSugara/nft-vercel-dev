@@ -17,14 +17,15 @@ const Sidebar = () => {
       left={'0'}
       zIndex={3}
       height={'full'}
-      bg="legion.dark"
+      bg="gicv.dark"
+      color="white"
       position={'fixed'}
       alignItems="stretch"
       flexDirection="column"
       transitionDuration="150ms"
       pt={scrolling ? ['5vw', '5vw', '1vw'] : ['18vw', '18vw', '5vw']}
-      width={isSidebarOpen ? ['55vw', '55vw', '17vw'] : [0, 0, '17vw']}
-      borderRightColor="legion.dark"
+      width={isSidebarOpen ? ['55vw', '55vw', 0] : [0, 0, 0]}
+      borderRightColor="gicv.dark"
       transitionTimingFunction="linear"
       transitionProperty="width, padding"
     >
@@ -35,7 +36,7 @@ const Sidebar = () => {
           ))}
         </Box>
       </Menu>
-      {/* <Flex py="6" mt="auto" borderTop="2px" direction="column" borderTopColor="legion.dark">
+      {/* <Flex py="6" mt="auto" borderTop="2px" direction="column" borderTopColor="gicv.dark">
         <SidebarToolkit />
         <SidebarContact />
       </Flex> */}

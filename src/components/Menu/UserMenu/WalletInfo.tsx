@@ -41,7 +41,7 @@ const WalletInfo = ({ hasLowBnbBalance, onDismiss }: WalletInfoProps) => {
         />
       )}
       <Flex alignItems="center" justifyContent="space-between">
-        <Text color="legion.secondary">{t('BNB Balance')}</Text>
+        <Text color="gicv.secondary">{t('BNB Balance')}</Text>
         {fetchStatus !== FetchStatus.SUCCESS ? (
           <Skeleton height="22px" width="60px" />
         ) : (
@@ -49,7 +49,7 @@ const WalletInfo = ({ hasLowBnbBalance, onDismiss }: WalletInfoProps) => {
         )}
       </Flex>
       <Flex alignItems="center" justifyContent="space-between" mb="24px">
-        <Text color="legion.secondary">{t('LGN Balance')}</Text>
+        <Text color="gicv.secondary">{t('LGN Balance')}</Text>
         {legionFetchStatus !== FetchStatus.SUCCESS ? (
           <Skeleton height="22px" width="60px" />
         ) : (

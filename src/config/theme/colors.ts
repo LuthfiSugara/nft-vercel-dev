@@ -1,10 +1,10 @@
 export const customColors = {
-  legion: {
+  gicv: {
     primary: '#FFB55A',
     secondary: '#BDBDBD',
     dark: '#370617',
     light: '#550A24',
-    bg: 'linear-gradient(180deg, #FFF1E0 40%, #FFD199 100%)',
+    bg: '#FFFFFF',
     error: '#DE1B1B',
     warning: '#F59F00',
     success: '#74B816',

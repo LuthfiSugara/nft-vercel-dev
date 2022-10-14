@@ -1,4 +1,4 @@
-import { Box, Flex, IconButton, Spacer, Button } from '@chakra-ui/react'
+import { Box, Flex, IconButton, Spacer, Button, Text } from '@chakra-ui/react'
 import Link from 'next/link'
 import { useScrollEvent } from '@app/hooks'
 import { useWeb3React } from '@web3-react/core'
@@ -18,9 +18,8 @@ const Header: React.FC = () => {
     <Box
       display={'flex'}
       alignItems={'center'}
-      py={['2vw', '2vw', 0]}
-      px={['3.7vw', '3.7vw', '1vw']}
-      bg="legion.dark"
+      py={['2vw', '2vw', '2vw']}
+      px={['3.7vw', '3.7vw', '5vw']}
       position="fixed"
       top={scrolling ? '-1000' : '0'}
       transition="top 200ms ease-in-out"
@@ -28,9 +27,23 @@ const Header: React.FC = () => {
       width="full"
       maxH={['15vw', '15vw', '4vw']}
       as="header"
+      boxShadow={'md'}
     >
       <Flex alignItems="center">
-        <IconButton aria-label="menu" size={'sm'} bg="transparent" onClick={onSidebarToggle} icon={<MenuIcon />} />
+        <IconButton
+          display={['unset', 'unset', 'none']}
+          aria-label="menu"
+          size={'lg'}
+          bg="transparent"
+          // _hover={{
+          //   backgroundColor: 'gicv.light',
+          // }}
+          // _active={{
+          //   backgroundColor: 'gicv.light',
+          // }}
+          onClick={onSidebarToggle}
+          icon={<MenuIcon />}
+        />
         <Box display={['none', 'none', 'unset']}>
           <Link href="/" passHref>
             <a
@@ -40,7 +53,9 @@ const Header: React.FC = () => {
                 justifyContent: 'center',
               }}
             >
-              <LegionSiteLogo />
+              <Text fontSize={['1vw', '1vw', '1.7vw']} fontWeight={'extrabold'}>
+                GICVerse
+              </Text>
             </a>
           </Link>
         </Box>
@@ -77,7 +92,7 @@ const Header: React.FC = () => {
         />
       ) : (
         <Button
-          bg={'brand.bg.10'}
+          // bg={'brand.bg.10'}
           h={'fit-content'}
           py={['2vw', '2vw', '0.8vw']}
           px={['3vw', '4vw', '1.5vw']}
@@ -87,12 +102,12 @@ const Header: React.FC = () => {
           colorScheme="primary"
           onClick={onPresent}
           color="white"
-          _hover={{
-            backgroundColor: 'brand.bg.10',
-          }}
-          _active={{
-            backgroundColor: 'brand.bg.10',
-          }}
+          // _hover={{
+          //   backgroundColor: 'brand.bg.10',
+          // }}
+          // _active={{
+          //   backgroundColor: 'brand.bg.10',
+          // }}
         >
           {account.slice(0, 5) + '...' + account.slice(-4)}
         </Button>

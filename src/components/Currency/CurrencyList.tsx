@@ -40,7 +40,7 @@ const CurrencyRow = ({ onSelect, isSelected, currency }: CurrencyRowProps) => {
       display="flex"
       alignItems="center"
       _hover={{
-        backgroundColor: 'legion.light',
+        backgroundColor: 'gicv.light',
       }}
       rounded="2xl"
       onClick={() => onSelect()}
@@ -51,7 +51,7 @@ const CurrencyRow = ({ onSelect, isSelected, currency }: CurrencyRowProps) => {
           <CurrencyLogo currency={currency} />
           <Box ml="2">
             <Text fontWeight="bold">{currency.symbol}</Text>
-            <Text fontSize="sm" color="legion.secondary">
+            <Text fontSize="sm" color="gicv.secondary">
               {!isOnSelectedList && customAdded && 'Added by user •'} {currency.name}
             </Text>
           </Box>
@@ -60,7 +60,7 @@ const CurrencyRow = ({ onSelect, isSelected, currency }: CurrencyRowProps) => {
           {balance ? (
             <Balance balance={balance} />
           ) : account ? (
-            <Spinner color="legion.primary" thickness="4px" size="sm" />
+            <Spinner color="gicv.primary" thickness="4px" size="sm" />
           ) : null}
         </Box>
       </Flex>
@@ -94,7 +94,7 @@ const CurrencyList = ({
   }, [breakIndex, currencies, showETH])
 
   return (
-    <VStack overflowY="auto" height="72" pb="2" sx={withCustomScrollBar('4px', 'legion.secondary')}>
+    <VStack overflowY="auto" height="72" pb="2" sx={withCustomScrollBar('4px', 'gicv.secondary')}>
       {itemData.map((currency, idx) => (
         <CurrencyRow
           currency={currency}

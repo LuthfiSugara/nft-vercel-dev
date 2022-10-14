@@ -10,7 +10,7 @@ interface QuestionHelperProps extends Omit<TooltipProps, 'children'> {
 const QuestionHelper = ({ icon = 'outline', ...props }: QuestionHelperProps) => {
   const { onToggle, isOpen, onOpen, onClose } = useDisclosure()
   return (
-    <Tooltip placement="left-end" hasArrow bg="legion.secondary" p="3" rounded="2xl" {...props} isOpen={isOpen}>
+    <Tooltip placement="left-end" hasArrow bg="gicv.secondary" p="3" rounded="2xl" {...props} isOpen={isOpen}>
       {icon === 'outline' ? (
         <InfoOutlineIcon onClick={onToggle} onMouseEnter={onOpen} onMouseLeave={onClose} />
       ) : (

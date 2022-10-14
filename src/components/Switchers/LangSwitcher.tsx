@@ -11,7 +11,7 @@ export default function LangSwitcher() {
       <MenuButton as={Button} leftIcon={<GlobeIcon />}>
         {currentLanguage.code.toUpperCase() ?? 'EN'}
       </MenuButton>
-      <MenuList maxH="240px" overflowY="auto" bg="legion.dark" sx={withCustomScrollBar('6px')} border="none">
+      <MenuList maxH="240px" overflowY="auto" bg="gicv.dark" sx={withCustomScrollBar('6px')} border="none">
         {Object.entries(languages).map(([locale, lang]) => (
           <MenuItem onClick={() => setLanguage(lang)} size="sm" variant="ghost" key={`language-${locale}`}>
             {lang.language}

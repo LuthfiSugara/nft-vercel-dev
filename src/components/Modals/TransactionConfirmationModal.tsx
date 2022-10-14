@@ -41,12 +41,12 @@ function ConfirmationPendingContent({ pendingText }: { pendingText: string }) {
   return (
     <Wrapper p="4">
       <ConfirmedIcon justify="center" align="center">
-        <Spinner size="xl" color="legion.main.200" thickness="4px" speed="2s" emptyColor="brand.bg.1" />
+        <Spinner size="xl" color="gicv.main.200" thickness="4px" speed="2s" emptyColor="brand.bg.1" />
       </ConfirmedIcon>
       <VStack spacing="2" justify="center">
         <Text fontSize="20px">{t('Waiting For Confirmation')}</Text>
         <Flex gap="12px" justify="center">
-          <Text textAlign="center" fontWeight="bold" color="legion.main.200">
+          <Text textAlign="center" fontWeight="bold" color="gicv.main.200">
             {pendingText}
           </Text>
         </Flex>
@@ -77,10 +77,10 @@ function TransactionSubmittedContent({
     <Wrapper>
       <Section direction="column" justify="center">
         <ConfirmedIcon justify="center" align="center">
-          <ArrowUpIcon strokeWidth={0.5} width="90px" color="legion.main.300" w={20} h={20} />
+          <ArrowUpIcon strokeWidth={0.5} width="90px" color="gicv.main.300" w={20} h={20} />
         </ConfirmedIcon>
         <VStack spacing="4" justify="center">
-          <Text fontSize="20px" color="legion.gray.200">
+          <Text fontSize="20px" color="gicv.gray.200">
             {t('Transaction Submitted')}
           </Text>
           {chainId && hash && (
@@ -136,8 +136,8 @@ export function TransactionErrorContent({ message, onDismiss }: { message: strin
   return (
     <Wrapper py="4">
       <VStack justify="center">
-        <WarningIcon color="legion.red.600" w={12} h={12} />
-        <Text color="legion.red.900">{message}</Text>
+        <WarningIcon color="gicv.red.600" w={12} h={12} />
+        <Text color="gicv.red.900">{message}</Text>
       </VStack>
 
       <Flex justifyContent="center" pt="4">

@@ -7,7 +7,7 @@ export const customComponents = {
       rounded: 'md',
     },
     defaultProps: {
-      startColor: 'legion.dark',
+      startColor: 'gicv.dark',
       endColor: 'brand.bg.8',
     },
   },

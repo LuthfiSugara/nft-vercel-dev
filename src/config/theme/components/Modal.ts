@@ -3,7 +3,7 @@ export const Modal = {
   baseStyle: {
     dialog: {
       rounded: '3xl',
-      bg: 'legion.dark',
+      bg: 'gicv.dark',
     },
     /**
      * @todo Custom scroll

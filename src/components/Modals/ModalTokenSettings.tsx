@@ -19,7 +19,6 @@ import styled from '@emotion/styled'
 import { withCustomScrollBar } from '@app/config/theme/withCustomScrollbar'
 import theme from '@app/config/theme'
 import { useExpertModeManager, useUserExpertModeAcknowledgementShow } from '@app/store/user/hooks'
-import { useSwapActionHandlers } from '@app/store/swap/hooks'
 import { useState } from 'react'
 import ExpertModal from '../Menu/GlobalSettings/ExpertModal'
 
@@ -32,7 +31,6 @@ export default function ModalTokenSettings({ isOpen, onDismiss }: InjectedModalP
   const [showConfirmExpertModal, setShowConfirmExpertModal] = useState(false)
   const [showExpertModeAcknowledgement, setShowExpertModeAcknowledgement] = useUserExpertModeAcknowledgementShow()
   const [expertMode, toggleExpertMode] = useExpertModeManager()
-  const { onChangeRecipient } = useSwapActionHandlers()
 
   if (showConfirmExpertModal) {
     return (
@@ -47,10 +45,8 @@ export default function ModalTokenSettings({ isOpen, onDismiss }: InjectedModalP
 
   const handleExpertModeToggle = () => {
     if (expertMode) {
-      onChangeRecipient(null)
       toggleExpertMode()
     } else if (!showExpertModeAcknowledgement) {
-      onChangeRecipient(null)
       toggleExpertMode()
     } else {
       setShowConfirmExpertModal(true)
@@ -70,7 +66,7 @@ export default function ModalTokenSettings({ isOpen, onDismiss }: InjectedModalP
           spacing="4"
           mt={['2', '4']}
           overflowY="scroll"
-          sx={withCustomScrollBar('4px', theme.colors.legion.secondary)}
+          sx={withCustomScrollBar('4px', theme.colors.gicv.secondary)}
         >
           <>
             <Flex pb="24px" flexDirection="column">
@@ -79,7 +75,7 @@ export default function ModalTokenSettings({ isOpen, onDismiss }: InjectedModalP
               </Text>
               <GasSettings />
             </Flex>
-            <Flex pt="24px" flexDirection="column" borderTop={`1px ${theme.colors.legion.gray[200]} solid`}>
+            <Flex pt="24px" flexDirection="column" borderTop={`1px ${theme.colors.gicv.gray[200]} solid`}>
               <Text fontWeight="bold" textTransform="uppercase" fontSize="12px" color="secondary" mb="24px">
                 {t('Swaps & Liquidity')}
               </Text>

@@ -54,7 +54,7 @@ const CardToken = ({
     />
   )
   return (
-    <Flex rounded="xl" height="90px" bgColor="legion.light" boxShadow="inner" id={id}>
+    <Flex rounded="xl" height="90px" bgColor="gicv.light" boxShadow="inner" id={id}>
       <Flex w="full" justify="space-between" px="4" py="2" align="stretch" direction="column">
         <Flex justify="space-between">
           <Text>{label}</Text>

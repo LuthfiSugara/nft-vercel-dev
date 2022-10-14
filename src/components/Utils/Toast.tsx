@@ -12,13 +12,13 @@ const ToastWrapper = ({ id, description, title, type, onClose }: ToastWrapperPro
         roundedBottomLeft="2xl"
         bg={
           type === 'success'
-            ? 'legion.success'
+            ? 'gicv.success'
             : type === 'error'
-            ? 'legion.error'
+            ? 'gicv.error'
             : type === 'warning'
-            ? 'legion.warning'
+            ? 'gicv.warning'
             : type === 'info'
-            ? 'legion.info'
+            ? 'gicv.info'
             : 'inherit'
         }
         p="4"

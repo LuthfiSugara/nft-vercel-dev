@@ -57,13 +57,13 @@ export default function ModalTokenHistory({ isOpen, onDismiss }: InjectedModalPr
       <ModalContent width={['90vw', 'sm']}>
         <ModalHeader>{t('Recent Transactions')}</ModalHeader>
         <ModalCloseButton />
-        <ModalBody py="6" borderTop="1px" borderTopColor="legion.secondary">
+        <ModalBody py="6" borderTop="1px" borderTopColor="gicv.secondary">
           <NoSSR>
             {account ? (
               !!pending.length || !!confirmed.length ? (
                 <>
                   <Flex mb="4" justify="space-between" align="center">
-                    <Text color="legion.gray.200">{t('Recent Transactions')}</Text>
+                    <Text color="gicv.gray.200">{t('Recent Transactions')}</Text>
                     <Button variant="ghost" colorScheme="primary" size="sm" onClick={clearAllTransactionsCallback}>
                       {t('clear all')}
                     </Button>

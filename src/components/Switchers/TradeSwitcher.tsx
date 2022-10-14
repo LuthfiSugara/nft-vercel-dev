@@ -8,9 +8,9 @@ export default function TradeSwitcher() {
   const { pathname, push } = useRouter()
   const { t } = useTranslation()
   return (
-    <ButtonGroup rounded="3xl" variant="solid" isTruncated bg="legion.dark" p={1}>
+    <ButtonGroup rounded="3xl" variant="solid" isTruncated bg="gicv.dark" p={1}>
       <Button
-        colorScheme={pathname.includes('/swap') ? 'primary' : 'legion.dark'}
+        colorScheme={pathname.includes('/swap') ? 'primary' : 'gicv.dark'}
         color="white"
         rounded="3xl"
         // isActive={pathname.includes('/swap')}
@@ -19,7 +19,7 @@ export default function TradeSwitcher() {
         {t('Swap')}
       </Button>
       <Button
-        colorScheme={liquidityAlias.includes(pathname) ? 'primary' : 'legion.dark'}
+        colorScheme={liquidityAlias.includes(pathname) ? 'primary' : 'gicv.dark'}
         color="white"
         rounded="3xl"
         // isActive={liquidityAlias.includes(pathname)}

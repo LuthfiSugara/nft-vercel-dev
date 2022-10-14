@@ -44,7 +44,7 @@ export default function SEO({ description, title, favicon, canonical, image, chi
           <link property="canonical" href={canonical} />
         </>
       )}
-      <link rel="icon" href={favicon || '/favicon.png'} />
+      <link rel="icon" href={favicon || '/favicon.ico'} />
       {children}
     </Head>
   )

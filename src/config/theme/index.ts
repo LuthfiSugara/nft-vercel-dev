@@ -5,7 +5,7 @@ import { customComponents } from './components'
 
 const theme = extendTheme({
   config: {
-    initialColorMode: 'dark',
+    initialColorMode: 'light',
     useSystemColorMode: false,
   },
   styles: customStyles,
