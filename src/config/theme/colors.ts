@@ -1,7 +1,7 @@
 export const customColors = {
   gicv: {
-    primary: '#FFB55A',
-    secondary: '#BDBDBD',
+    primary: '#FF6600',
+    secondary: '#F8F9FA',
     dark: '#370617',
     light: '#550A24',
     bg: '#FFFFFF',

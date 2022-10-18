@@ -1,7 +1,7 @@
 import { Wallet } from '@app/config/wallets'
 import { DismissHandler } from '@app/context'
 import { useAuth } from '@app/hooks'
-import { Button } from '@chakra-ui/react'
+import { Button, Text } from '@chakra-ui/react'
 
 interface WalletButtonProps {
   wallet: Wallet
@@ -15,20 +15,22 @@ export default function WalletButton({
   const { login } = useAuth()
   return (
     <Button
-      display="flex"
-      alignItems="center"
-      justifyContent="space-between"
+      display="block"
       w="full"
-      p="6"
-      rounded="xl"
+      h={['10w', '10vw', '8vw']}
+      px={0}
+      fontSize={['1vw', '1vw', '1vw']}
+      rounded={['3xl', '3xl', '1vw']}
       variant="solid"
+      bgColor={'gicv.white'}
+      _hover={{ bgColor: 'gicv.secondary' }}
       onClick={() => {
         login(connectorId)
         onDismiss()
       }}
-      rightIcon={<WalletIcon boxSize={7} />}
     >
-      {label}
+      <WalletIcon boxSize={['10vw', '10vw', '3vw']} mb={['1vw', '1vw', '1vw']} />
+      <Text>{label}</Text>
     </Button>
   )
 }

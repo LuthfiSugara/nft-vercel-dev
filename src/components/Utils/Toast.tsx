@@ -6,7 +6,7 @@ type ToastWrapperProps = RenderProps & ToasterOptions & { type: UseToastOptions[
 
 const ToastWrapper = ({ id, description, title, type, onClose }: ToastWrapperProps) => {
   return (
-    <Flex bg="brand.bg.5" id={id.toString()} rounded="2xl" w="sm">
+    <Flex bg="gicv.secondary" id={id.toString()} rounded="2xl" w="sm">
       <Box
         roundedTopLeft="2xl"
         roundedBottomLeft="2xl"

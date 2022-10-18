@@ -21,7 +21,6 @@ export const customComponents = {
     // },
     baseStyle: {
       colorScheme: 'primary',
-      color: 'white',
     },
   },
 }
