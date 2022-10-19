@@ -1,15 +1,11 @@
-import { useTranslation } from '@app/context/Localization'
 import { useModal } from '@app/context/Modal/useModal'
-import { Button, ButtonProps } from '@chakra-ui/react'
+import { Avatar, AvatarProps } from '@chakra-ui/react'
 import { ModalWalletSelection } from '../Modals'
 
-const ConnectWalletButton = (props: Omit<ButtonProps, 'children'>) => {
+const ConnectWalletButton = (props: Omit<AvatarProps, 'children'>) => {
   const [onOpenWalletModal] = useModal(<ModalWalletSelection />)
-  const { t } = useTranslation()
   return (
-    <Button colorScheme="primary" onClick={onOpenWalletModal} color="white" {...props}>
-      {t('Connect Wallet')}
-    </Button>
+    <Avatar onClick={onOpenWalletModal} w={'3vw'} h={'3vw'} _hover={{ cursor: 'pointer', opacity: '0.7' }} {...props} />
   )
 }
 

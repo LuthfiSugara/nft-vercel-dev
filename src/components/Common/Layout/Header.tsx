@@ -1,4 +1,4 @@
-import { Box, Flex, IconButton, Spacer, Button, Text } from '@chakra-ui/react'
+import { Box, Flex, IconButton, Spacer, Button, Text, Avatar } from '@chakra-ui/react'
 import Link from 'next/link'
 import { useScrollEvent } from '@app/hooks'
 import { useWeb3React } from '@web3-react/core'
@@ -19,13 +19,13 @@ const Header: React.FC = () => {
       display={'flex'}
       alignItems={'center'}
       py={['2vw', '2vw', '2vw']}
-      px={['3.7vw', '3.7vw', '5vw']}
+      px={['3.7vw', '3.7vw', '3.5vw']}
       position="fixed"
       top={scrolling ? '-1000' : '0'}
       transition="top 200ms ease-in-out"
       zIndex={20}
       width="full"
-      maxH={['15vw', '15vw', '4vw']}
+      maxH={['15vw', '15vw', '4.3vw']}
       as="header"
       boxShadow={'md'}
     >
@@ -44,7 +44,7 @@ const Header: React.FC = () => {
           onClick={onSidebarToggle}
           icon={<MenuIcon />}
         />
-        <Box display={['none', 'none', 'unset']}>
+        <Flex display={['none', 'none', 'unset']}>
           <Link href="/" passHref>
             <a
               style={{
@@ -53,12 +53,12 @@ const Header: React.FC = () => {
                 justifyContent: 'center',
               }}
             >
-              <Text fontSize={['1vw', '1vw', '1.7vw']} fontWeight={'extrabold'}>
+              <Text fontSize={'1.7vw'} fontWeight={'extrabold'}>
                 GICVerse
               </Text>
             </a>
           </Link>
-        </Box>
+        </Flex>
         <Box display={['unset', 'unset', 'none']} mx={2}>
           <Link href="/" passHref>
             <a
@@ -68,46 +68,27 @@ const Header: React.FC = () => {
                 justifyContent: 'center',
               }}
             >
-              <LegionSiteLogoMobile />
+              <Text fontSize={'5vw'} fontWeight={'extrabold'}>
+                GICVerse
+              </Text>
             </a>
           </Link>
         </Box>
       </Flex>
       <Spacer />
       {!active ? (
-        <ConnectWalletButton
-          bg={'brand.bg.10'}
-          h={'fit-content'}
-          py={['2vw', '2vw', '0.8vw']}
-          px={['3vw', '4vw', '1.5vw']}
-          borderRadius={['2vw', '2vw', '0.5vw']}
-          fontSize={['4vw', '4vw', '1vw']}
-          fontWeight={'extrabold'}
-          _hover={{
-            backgroundColor: 'brand.bg.10',
-          }}
-          _active={{
-            backgroundColor: 'brand.bg.10',
-          }}
-        />
+        <ConnectWalletButton />
       ) : (
         <Button
-          // bg={'brand.bg.10'}
+          onClick={onPresent}
+          variant={'outline'}
+          fontSize={['4vw', '4vw', '1vw']}
+          fontWeight={'extrabold'}
+          border={['1vw solid', '1vw solid', '0.1vw solid']}
+          borderRadius={['2vw', '2vw', '0.5vw']}
           h={'fit-content'}
           py={['2vw', '2vw', '0.8vw']}
           px={['3vw', '4vw', '1.5vw']}
-          borderRadius={['2vw', '2vw', '0.5vw']}
-          fontSize={['4vw', '4vw', '1vw']}
-          fontWeight={'extrabold'}
-          colorScheme="primary"
-          onClick={onPresent}
-          color="white"
-          // _hover={{
-          //   backgroundColor: 'brand.bg.10',
-          // }}
-          // _active={{
-          //   backgroundColor: 'brand.bg.10',
-          // }}
         >
           {account.slice(0, 5) + '...' + account.slice(-4)}
         </Button>

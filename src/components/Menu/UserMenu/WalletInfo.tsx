@@ -12,15 +12,12 @@ import LinkExternal from '@app/components/Link/LinkExternal'
 import WarningBanner from '@app/components/Banners/WarningBanner'
 
 interface WalletInfoProps {
-  hasLowBnbBalance: boolean
   onDismiss: InjectedModalProps['onDismiss']
 }
 
-const WalletInfo = ({ hasLowBnbBalance, onDismiss }: WalletInfoProps) => {
+const WalletInfo = ({ onDismiss }: WalletInfoProps) => {
   const { t } = useTranslation()
   const { account } = useWeb3React()
-  const { balance, fetchStatus } = useGetBnbBalance()
-  const { balance: legionBalance, fetchStatus: legionFetchStatus } = useTokenBalance(tokens.legion.address)
   const { logout } = useAuth()
   const handleLogout = () => {
     onDismiss()
@@ -28,38 +25,26 @@ const WalletInfo = ({ hasLowBnbBalance, onDismiss }: WalletInfoProps) => {
   }
   return (
     <>
-      <Text color="secondary" fontSize="12px" textTransform="uppercase" fontWeight="bold" mb="8px">
-        {t('Your Address')}
+      <Text color="secondary" fontSize={['1vw', '1vw', '0.7vw']} fontWeight={'bold'} textTransform="uppercase">
+        {t('Connected Address')}
       </Text>
-      <CopyAddress account={account} mb="24px" />
-      {hasLowBnbBalance && (
-        <WarningBanner
-          title={t('BNB Balance Low')}
-          description={t('You need BNB for transaction fees.')}
-          rounded="2xl"
-          mb="24px"
-        />
-      )}
-      <Flex alignItems="center" justifyContent="space-between">
-        <Text color="gicv.secondary">{t('BNB Balance')}</Text>
-        {fetchStatus !== FetchStatus.SUCCESS ? (
-          <Skeleton height="22px" width="60px" />
-        ) : (
-          <Text>{formatBigNumber(balance, 6)}</Text>
-        )}
-      </Flex>
-      <Flex alignItems="center" justifyContent="space-between" mb="24px">
-        <Text color="gicv.secondary">{t('LGN Balance')}</Text>
-        {legionFetchStatus !== FetchStatus.SUCCESS ? (
-          <Skeleton height="22px" width="60px" />
-        ) : (
-          <Text>{getFullDisplayBalance(legionBalance, 18, 3)}</Text>
-        )}
-      </Flex>
-      <Flex alignItems="center" justifyContent="end" mb="24px">
-        <LinkExternal href={getBscScanLink(account, 'address')}>{t('View on BscScan')}</LinkExternal>
-      </Flex>
-      <Button colorScheme="primary" variant="outline" width="100%" onClick={handleLogout} rounded="xl">
+      <CopyAddress
+        account={account}
+        border={['0.5vw solid', '0.5vw solid', '0.1vw solid']}
+        borderRadius={['2vw', '2vw', '1vw']}
+        p={['1vw', '1vw', '1vw']}
+        mt={['1vw', '1vw', '0.6vw']}
+      />
+      <Button
+        h={'fit-content'}
+        width="100%"
+        onClick={handleLogout}
+        fontSize={['1vw', '1vw', '1vw']}
+        p={['1vw', '1vw', '1vw']}
+        mt={['1vw', '1vw', '1.5vw']}
+        // border={['1vw solid', '1vw solid', '0.1vw solid']}
+        borderRadius={['1vw', '1vw', '1vw']}
+      >
         {t('Disconnect Wallet')}
       </Button>
     </>
