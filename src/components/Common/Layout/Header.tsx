@@ -8,6 +8,7 @@ import { useModal } from '@app/context/Modal/useModal'
 import { useSidebar } from '@app/context/Sidebar/useSidebar'
 import { memo } from 'react'
 import { LegionSiteLogo, LegionSiteLogoMobile, MenuIcon } from '@app/components/Icons'
+import TopNav from './TopNav'
 
 const Header: React.FC = () => {
   const { scrolling } = useScrollEvent()
@@ -19,7 +20,7 @@ const Header: React.FC = () => {
       display={'flex'}
       alignItems={'center'}
       py={['2vw', '2vw', '2vw']}
-      px={['3.7vw', '3.7vw', '3.5vw']}
+      px={['3.7vw', '3.7vw', '4vw']}
       position="fixed"
       top={scrolling ? '-1000' : '0'}
       transition="top 200ms ease-in-out"
@@ -44,7 +45,7 @@ const Header: React.FC = () => {
           onClick={onSidebarToggle}
           icon={<MenuIcon />}
         />
-        <Flex display={['none', 'none', 'unset']}>
+        <Box display={['none', 'none', 'unset']}>
           <Link href="/" passHref>
             <a
               style={{
@@ -58,7 +59,7 @@ const Header: React.FC = () => {
               </Text>
             </a>
           </Link>
-        </Flex>
+        </Box>
         <Box display={['unset', 'unset', 'none']} mx={2}>
           <Link href="/" passHref>
             <a
@@ -74,6 +75,9 @@ const Header: React.FC = () => {
             </a>
           </Link>
         </Box>
+        <Flex display={['none', 'none', 'unset']}>
+          <TopNav />
+        </Flex>
       </Flex>
       <Spacer />
       {!active ? (
