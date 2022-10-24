@@ -21,14 +21,15 @@ const Header: React.FC = () => {
       alignItems={'center'}
       py={['2vw', '2vw', '2vw']}
       px={['3.7vw', '3.7vw', '4vw']}
-      position="fixed"
-      top={scrolling ? '-1000' : '0'}
+      position="relative"
+      // top={scrolling ? '-1000' : '0'}
       transition="top 200ms ease-in-out"
       zIndex={20}
       width="full"
-      maxH={['15vw', '15vw', '4.3vw']}
+      maxH={['15vw', '15vw', '4.5vw']}
       as="header"
       boxShadow={'md'}
+      bgColor={'gicv.white'}
     >
       <Flex alignItems="center">
         <IconButton
@@ -91,7 +92,7 @@ const Header: React.FC = () => {
           border={['1vw solid', '1vw solid', '0.1vw solid']}
           borderRadius={['2vw', '2vw', '0.5vw']}
           h={'fit-content'}
-          py={['2vw', '2vw', '0.8vw']}
+          py={['2vw', '2vw', '0.6vw']}
           px={['3vw', '4vw', '1.5vw']}
         >
           {account.slice(0, 5) + '...' + account.slice(-4)}

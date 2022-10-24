@@ -24,7 +24,7 @@ const ChildItem = ({ handleChildMenuClicked, child }: ChildItemProps) => {
     <MenuItem
       px={['18vw', '18vw', '5.25vw']}
       py={['3vw', '3vw', '1vw']}
-      bg="gicv.light"
+      bg="gicv.black"
       borderLeft={['1vw solid', '1vw solid', '0.3vw solid']}
       _hover={{ bg: 'gicv.overlay' }}
       _focus={{ bg: 'gicv.dark' }}

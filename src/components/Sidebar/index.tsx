@@ -13,11 +13,12 @@ const Sidebar = () => {
   const { isSidebarOpen } = useSidebar()
   return (
     <Flex
+      display={['unset', 'unset', 'none']}
       top="0"
       left={'0'}
       zIndex={3}
       height={'full'}
-      bg="gicv.dark"
+      bg="gicv.black"
       color="white"
       position={'fixed'}
       alignItems="stretch"
