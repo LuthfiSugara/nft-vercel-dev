@@ -20,19 +20,19 @@ const Layout = ({ children }) => {
           transitionDuration="150ms"
           transitionProperty="margin"
           transitionTimingFunction="linear"
-          minH={'100vh'}
+          // minH={'100vh'}
         >
           <SidebarOverlay />
           {children}
         </Box>
       </Flex>
-      <Footer
+      {/* <Footer
         transitionDuration="150ms"
         transitionProperty="margin"
         transitionTimingFunction="linear"
         marginLeft={[0, 0, '17vw']}
         marginRight="0"
-      />
+      /> */}
     </Box>
   )
 }

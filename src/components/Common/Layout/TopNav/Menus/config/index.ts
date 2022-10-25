@@ -2,15 +2,15 @@ import { IMenus } from './types'
 
 export const menus: IMenus[] = [
   {
-    title: 'GIC Store',
+    label: 'GIC Store',
     path: '/gic-store',
   },
   {
-    title: 'MarketPlace',
+    label: 'Marketplace',
     path: '/marketplace',
   },
   {
-    title: 'Collectible',
+    label: 'Collectible',
     path: '/collectible',
   },
 ]

@@ -10,7 +10,7 @@ const Menus: React.FunctionComponent<IMenusProps> = (props) => {
   return (
     <HStack spacing={'4vw'} mx={'5vw'} w={'fit-content'}>
       {menus.map((_, idx) => (
-        <Menu key={`header-menu-item-${idx}`} title={_.title} path={_.path} />
+        <Menu key={`header-menu-item-${idx}`} label={_.label} path={_.path} />
       ))}
     </HStack>
   )
