@@ -7,7 +7,7 @@ export const customStyles = {
       fontFamily: `"Montserrat","Kanit", sans-serif`,
       bg: mode('white', 'black')(props),
       color: mode('black', 'white')(props),
-      ...withCustomScrollBar(['6px', '6px', '0.3vw']),
+      ...withCustomScrollBar(['1vw', '1vw', '0.3vw']),
     },
   }),
 }

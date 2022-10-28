@@ -3,17 +3,20 @@ import Image from 'next/image'
 import * as React from 'react'
 import bgImg from '@public/images/Landing/landing-banner-bg.png'
 import Banner from './Banner'
+import FeaturedCollections from './FeaturedCollections'
 
 const Home: React.FunctionComponent = () => {
   return (
     <Box>
-      <Box position={'relative'} height={'43vw'}>
+      <Box height={'50vw'}>
         <Box position={'absolute'} w={'full'}>
           <Image src={bgImg} placeholder={'blur'} sizes={'100vw'} alt={''} />
         </Box>
         <Banner />
       </Box>
-      <Box position={'relative'}></Box>
+      <Box px={'15vw'}>
+        <FeaturedCollections />
+      </Box>
     </Box>
   )
 }
