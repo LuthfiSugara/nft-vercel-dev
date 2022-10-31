@@ -32,9 +32,9 @@ const FeaturedCollection: React.FunctionComponent<IFeaturedCollectionProps> = (p
       >
         <GridItem colSpan={5} py={'1.2vw'}>
           <Image
-            borderRadius="full"
             boxSize="8vw"
             border={'0.5vw solid white'}
+            borderRadius="full"
             src="https://bit.ly/dan-abramov"
             alt=""
           />

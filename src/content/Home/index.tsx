@@ -4,6 +4,7 @@ import * as React from 'react'
 import bgImg from '@public/images/Landing/landing-banner-bg.png'
 import Banner from './Banner'
 import FeaturedCollections from './FeaturedCollections'
+import TopCollections from './TopCollections'
 
 const Home: React.FunctionComponent = () => {
   return (
@@ -16,6 +17,7 @@ const Home: React.FunctionComponent = () => {
       </Box>
       <Box px={'15vw'}>
         <FeaturedCollections />
+        <TopCollections />
       </Box>
     </Box>
   )
