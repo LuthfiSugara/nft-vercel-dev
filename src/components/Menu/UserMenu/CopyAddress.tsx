@@ -2,14 +2,13 @@ import styled from '@emotion/styled'
 import { useTranslation } from '@app/context'
 import { Box, Flex, FlexProps, IconButton, Text, useClipboard } from '@chakra-ui/react'
 import { CopyIcon } from '@chakra-ui/icons'
-import theme from '@app/config/theme'
 
 interface CopyAddressProps extends FlexProps {
   account: string
 }
 
-const Tooltip = styled(Box)<{ isTooltipDisplayed: boolean }>`
-  display: ${({ isTooltipDisplayed }) => (isTooltipDisplayed ? 'inline-block' : 'none')};
+const Tooltip = styled(Box)<{ istooltipdisplayed: string }>`
+  display: ${({ istooltipdisplayed }) => (istooltipdisplayed === 'true' ? 'inline-block' : 'none')};
   position: absolute;
   right: 0;
   text-align: center;
@@ -37,7 +36,7 @@ const CopyAddress: React.FC<CopyAddressProps> = ({ account, ...props }) => {
         icon={<CopyIcon w={['1vw', '1vw', '1vw']} h={['1vw', '1vw', '1vw']} />}
       />
       <Tooltip
-        isTooltipDisplayed={hasCopied}
+        istooltipdisplayed={hasCopied.toString()}
         bgColor={'lightgray'}
         borderRadius={['1vw', '1vw', '0.5vw']}
         top={['-1vw', '-1vw', '-2.5vw']}

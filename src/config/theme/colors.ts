@@ -68,7 +68,7 @@ export const customColors = {
       9: '#F5F5F5',
       10: 'linear-gradient(90.09deg, #DDB472 0.08%, #9D0208 78.6%)',
       11: 'rgba(52,58,64,0.2)',
-      12: 'rgba(255, 255, 255, 0.4)',
+      12: 'rgba(0, 0, 0, 0.5)',
     },
   },
 }

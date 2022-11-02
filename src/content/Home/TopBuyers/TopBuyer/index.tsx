@@ -4,9 +4,9 @@ import { CheckCircleIcon } from '@chakra-ui/icons'
 import Balance from '@app/components/Balance'
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
-interface ITopCollectionProps {}
+interface ITopBuyerProps {}
 
-const TopCollection: React.FunctionComponent<ITopCollectionProps> = (props) => {
+const TopBuyer: React.FunctionComponent<ITopBuyerProps> = (props) => {
   return (
     <Grid
       templateRows="repeat(10, 1fr)"
@@ -58,4 +58,4 @@ const TopCollection: React.FunctionComponent<ITopCollectionProps> = (props) => {
   )
 }
 
-export default TopCollection
+export default TopBuyer

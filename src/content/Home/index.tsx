@@ -5,6 +5,8 @@ import bgImg from '@public/images/Landing/landing-banner-bg.png'
 import Banner from './Banner'
 import FeaturedCollections from './FeaturedCollections'
 import TopCollections from './TopCollections'
+import LiveAuctions from './LiveAuctions'
+import TopBuyers from './TopBuyers'
 
 const Home: React.FunctionComponent = () => {
   return (
@@ -18,6 +20,8 @@ const Home: React.FunctionComponent = () => {
       <Box px={'15vw'}>
         <FeaturedCollections />
         <TopCollections />
+        <LiveAuctions />
+        <TopBuyers />
       </Box>
     </Box>
   )
