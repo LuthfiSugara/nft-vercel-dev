@@ -7,6 +7,7 @@ import FeaturedCollections from './FeaturedCollections'
 import TopCollections from './TopCollections'
 import LiveAuctions from './LiveAuctions'
 import TopBuyers from './TopBuyers'
+import TopSellers from './TopSellers'
 
 const Home: React.FunctionComponent = () => {
   return (
@@ -22,6 +23,7 @@ const Home: React.FunctionComponent = () => {
         <TopCollections />
         <LiveAuctions />
         <TopBuyers />
+        <TopSellers />
       </Box>
     </Box>
   )

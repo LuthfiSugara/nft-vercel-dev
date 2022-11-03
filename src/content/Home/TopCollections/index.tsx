@@ -30,7 +30,7 @@ const TopCollections: React.FunctionComponent<ITopCollectionsProps> = (props) =>
           px={['1vw', '1vw', '2.5vw']}
           h={'3.5vw'}
           borderRadius={'0.5vw'}
-          onClick={() => router.push('/collections')}
+          onClick={() => router.push('/top-collections')}
         >
           {t('More')}
           <ArrowForwardIcon ml={'1vw'} />

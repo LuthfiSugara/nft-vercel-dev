@@ -1,15 +1,15 @@
 import * as React from 'react'
 import { useTranslation } from '@app/context'
 import { Text, HStack, Flex, Button, Box, SimpleGrid, VStack } from '@chakra-ui/react'
-import TopBuyer from './TopBuyer'
+import TopSeller from './TopSeller'
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 import { useRouter } from 'next/router'
 import { withCustomScrollBar } from '@app/config/theme/withCustomScrollbar'
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
-interface ITopBuyersProps {}
+interface ITopSellersProps {}
 
-const TopBuyers: React.FunctionComponent<ITopBuyersProps> = (props) => {
+const TopSellers: React.FunctionComponent<ITopSellersProps> = (props) => {
   const { t } = useTranslation()
   const router = useRouter()
   return (
@@ -17,7 +17,7 @@ const TopBuyers: React.FunctionComponent<ITopBuyersProps> = (props) => {
       <HStack justifyContent={'space-between'} mt={'7vw'}>
         <Flex>
           <Text fontSize={'2.8vw'} fontWeight={'extrabold'}>
-            {t('Top Buyers')}
+            {t('Top Sellers')}
           </Text>
           <Text fontSize={'1.4vw'} fontWeight={'bold'} pt={'1.5vw'} pl={'1vw'}>
             {t('in 7 days')}
@@ -30,23 +30,23 @@ const TopBuyers: React.FunctionComponent<ITopBuyersProps> = (props) => {
           px={['1vw', '1vw', '2.5vw']}
           h={'3.5vw'}
           borderRadius={'0.5vw'}
-          onClick={() => router.push('/top-buyers')}
+          onClick={() => router.push('/top-sellers')}
         >
           {t('More')}
           <ArrowForwardIcon ml={'1vw'} />
         </Button>
       </HStack>
-      <Flex overflowX={'scroll'} mt={'2vw'} pb={'1vw'} sx={withCustomScrollBar()}>
+      <Flex overflowX={'scroll'} mt={'2vw'} pb={'1vw'} sx={withCustomScrollBar()} mb={'10vw'}>
         {[...Array(15)].map((_, idp) => (
-          <Box key={`top__buyers__horizontal__${idp}`}>
+          <Box key={`top__sellers__horizontal__${idp}`}>
             {idp % 3 === 0 && (
               <Flex direction={'column'} w={'22vw'} mr={'2vw'}>
                 {[...Array(3)].map((_, idc) => (
-                  <HStack key={`top__buyers__vertical__${idc}`} justifyContent={'space-between'} mb={'1.5vw'}>
+                  <HStack key={`top__sellers__vertical__${idc}`} justifyContent={'space-between'} mb={'1.5vw'}>
                     <Text fontSize={'2.2vw'} fontWeight={'extrabold'} color={'gicv.gray.700'}>
                       {idp + 1 + idc}
                     </Text>
-                    <TopBuyer />
+                    <TopSeller />
                   </HStack>
                 ))}
               </Flex>
@@ -58,4 +58,4 @@ const TopBuyers: React.FunctionComponent<ITopBuyersProps> = (props) => {
   )
 }
 
-export default TopBuyers
+export default TopSellers

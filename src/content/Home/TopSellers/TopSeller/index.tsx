@@ -4,9 +4,9 @@ import { CheckCircleIcon } from '@chakra-ui/icons'
 import Balance from '@app/components/Balance'
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
-interface ITopBuyerProps {}
+interface ITopSellerProps {}
 
-const TopBuyer: React.FunctionComponent<ITopBuyerProps> = (props) => {
+const TopSeller: React.FunctionComponent<ITopSellerProps> = (props) => {
   return (
     <HStack w={'19vw'}>
       <Box position={'relative'} w={'3vw'} h={'3vw'} mr={'1vw'}>
@@ -36,4 +36,4 @@ const TopBuyer: React.FunctionComponent<ITopBuyerProps> = (props) => {
   )
 }
 
-export default TopBuyer
+export default TopSeller

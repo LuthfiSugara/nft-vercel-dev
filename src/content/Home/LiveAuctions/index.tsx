@@ -26,7 +26,7 @@ const LiveAuctions: React.FunctionComponent<ILiveAuctionsProps> = (props) => {
           px={['1vw', '1vw', '2.5vw']}
           h={'3.5vw'}
           borderRadius={'0.5vw'}
-          onClick={() => router.push('/auction')}
+          onClick={() => router.push('/marketplace')}
         >
           {t('More')}
           <ArrowForwardIcon ml={'1vw'} />
