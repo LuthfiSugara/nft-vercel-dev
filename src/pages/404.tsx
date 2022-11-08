@@ -10,7 +10,7 @@ export default function NotFoundPage() {
   return (
     <Layout>
       <SEO title={'404 | Not Found'} description={t('Oops, page not found.')} />
-      <Center h={'80vh'}>
+      <Center h={'90vh'}>
         <VStack spacing={'2vw'}>
           <VStack>
             <Text fontSize={'5vw'} fontWeight={'extrabold'}>

@@ -1,65 +1,72 @@
 import FooterLogoIcon from '@public/images/Footer/Logo/footer_logo_icon.png'
 import { GICIcon, TwitterIcon, TelegramIcon, DiscordIcon } from '@app/components/Icons'
 import { Icon } from '@chakra-ui/icons'
+import { FaDiscord, FaTelegramPlane, FaTwitter } from 'react-icons/fa'
+import { IconType } from 'react-icons'
 
 interface LinkedContentProps {
   label: string
-  icon?: typeof Icon
+  icon?: IconType
   path?: string
 }
 
 interface FooterItems {
   footerLogoIcon: StaticImageData
   GICIcon: typeof Icon
-  aboutItems: LinkedContentProps[]
-  productsItems: LinkedContentProps[]
+  exploreItems: LinkedContentProps[]
+  myAccountItems: LinkedContentProps[]
   communityItems: LinkedContentProps[]
 }
 
 export const footerItems: FooterItems = {
   footerLogoIcon: FooterLogoIcon,
   GICIcon: GICIcon,
-  aboutItems: [
+  exploreItems: [
     {
-      label: 'Docs',
+      label: 'GICStore',
+      path: '/gicstore',
     },
     {
-      label: 'News',
+      label: 'Marketplace',
+      path: '/marketplace',
     },
     {
-      label: 'Teams',
-    },
-    {
-      label: 'Github',
+      label: 'Collectible',
+      path: '/collectible',
     },
   ],
-  productsItems: [
+  myAccountItems: [
     {
-      label: 'Exchange',
-      path: '/swap',
+      label: 'Profile',
+      path: '/profile',
     },
     {
-      label: 'Farms',
-      // path: '/farms',
+      label: 'Favorite',
+      path: '/favorite',
     },
     {
-      label: 'Pools',
-      // path: '/pools',
+      label: 'Collections',
+      path: '/collections',
+    },
+    {
+      label: 'Activity',
+      path: '/activity',
     },
   ],
   communityItems: [
     {
-      label: 'Twitter',
-      icon: TwitterIcon,
+      label: 'Discord',
+      icon: FaDiscord,
+      path: 'https://discord.com/invite/mgUzSUjRej',
     },
     {
       label: 'Telegram',
-      icon: TelegramIcon,
+      icon: FaTelegramPlane,
     },
+
     {
-      label: 'Discord',
-      icon: DiscordIcon,
-      path: 'https://discord.com/invite/mgUzSUjRej',
+      label: 'Twitter',
+      icon: FaTwitter,
     },
   ],
 }

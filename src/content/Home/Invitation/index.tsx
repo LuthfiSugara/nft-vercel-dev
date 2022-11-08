@@ -10,7 +10,7 @@ const Invitation = () => {
   return (
     <Box pos={'relative'} width={'full'} height={'35vw'}>
       <Box pos={'absolute'} zIndex={0} width={'full'} height={'35vw'}>
-        <Image src={BgImg} placeholder={'blur'} objectFit={'cover'} alt={''} />
+        <Image src={BgImg} layout={'fill'} placeholder={'blur'} objectFit={'cover'} alt={''} />
       </Box>
       <Center pos={'absolute'} zIndex={1} width={'full'} height={'35vw'}>
         <VStack spacing={'3.5vw'}>

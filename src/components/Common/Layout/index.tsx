@@ -11,8 +11,8 @@ const Layout = ({ children }) => {
   usePollBlockNumber()
   useEagerConnect()
   return (
-    <Box>
-      <Box minH={'100vh'}>
+    <Box display={'block'} justifyContent={'space-between'} minH={'100vh'}>
+      <Box>
         <Header />
         <Flex maxWidth="full" position="relative">
           <Sidebar />
@@ -22,13 +22,7 @@ const Layout = ({ children }) => {
           </Box>
         </Flex>
       </Box>
-      <Footer
-        transitionDuration="150ms"
-        transitionProperty="margin"
-        transitionTimingFunction="linear"
-        marginLeft={[0, 0, '17vw']}
-        marginRight="0"
-      />
+      <Footer transitionDuration="150ms" transitionProperty="margin" transitionTimingFunction="linear" />
     </Box>
   )
 }
