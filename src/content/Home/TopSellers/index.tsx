@@ -36,7 +36,7 @@ const TopSellers: React.FunctionComponent<ITopSellersProps> = (props) => {
           <ArrowForwardIcon ml={'1vw'} />
         </Button>
       </HStack>
-      <Flex overflowX={'scroll'} mt={'2vw'} pb={'1vw'} sx={withCustomScrollBar()} mb={'10vw'}>
+      <Flex overflowX={'scroll'} mt={'2vw'} pb={'1vw'} sx={withCustomScrollBar()}>
         {[...Array(15)].map((_, idp) => (
           <Box key={`top__sellers__horizontal__${idp}`}>
             {idp % 3 === 0 && (

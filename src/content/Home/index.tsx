@@ -8,6 +8,7 @@ import TopCollections from './TopCollections'
 import LiveAuctions from './LiveAuctions'
 import TopBuyers from './TopBuyers'
 import TopSellers from './TopSellers'
+import Invitation from './Invitation'
 
 const Home: React.FunctionComponent = () => {
   return (
@@ -24,6 +25,9 @@ const Home: React.FunctionComponent = () => {
         <LiveAuctions />
         <TopBuyers />
         <TopSellers />
+      </Box>
+      <Box py={'5vw'}>
+        <Invitation />
       </Box>
     </Box>
   )

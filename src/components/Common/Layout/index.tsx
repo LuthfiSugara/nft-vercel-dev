@@ -12,27 +12,23 @@ const Layout = ({ children }) => {
   useEagerConnect()
   return (
     <Box>
-      <Header />
-      <Flex maxWidth="full" position="relative">
-        <Sidebar />
-        <Box
-          width="full"
-          transitionDuration="150ms"
-          transitionProperty="margin"
-          transitionTimingFunction="linear"
-          // minH={'100vh'}
-        >
-          <SidebarOverlay />
-          {children}
-        </Box>
-      </Flex>
-      {/* <Footer
+      <Box minH={'100vh'}>
+        <Header />
+        <Flex maxWidth="full" position="relative">
+          <Sidebar />
+          <Box width="full" transitionDuration="150ms" transitionProperty="margin" transitionTimingFunction="linear">
+            <SidebarOverlay />
+            {children}
+          </Box>
+        </Flex>
+      </Box>
+      <Footer
         transitionDuration="150ms"
         transitionProperty="margin"
         transitionTimingFunction="linear"
         marginLeft={[0, 0, '17vw']}
         marginRight="0"
-      /> */}
+      />
     </Box>
   )
 }
