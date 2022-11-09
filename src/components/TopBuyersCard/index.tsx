@@ -5,9 +5,9 @@ import Image from 'next/image'
 import Balance from '../Balance'
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
-interface ITopCollectionsCardProps {}
+interface ITopBuyersCardProps {}
 
-const TopCollectionsCard: React.FunctionComponent<ITopCollectionsCardProps> = (props) => {
+const TopBuyersCard: React.FunctionComponent<ITopBuyersCardProps> = (props) => {
   return (
     <Box
       borderRadius={'1vw'}
@@ -53,4 +53,4 @@ const TopCollectionsCard: React.FunctionComponent<ITopCollectionsCardProps> = (p
   )
 }
 
-export default TopCollectionsCard
+export default TopBuyersCard

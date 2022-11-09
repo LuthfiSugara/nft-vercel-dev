@@ -24,7 +24,7 @@ const Footer: React.FC<BoxProps> = (props) => {
   const router = useRouter()
   const [value, setValue] = useState('')
   return (
-    <Box pos={'relative'} px={'15vw'} py={['12vw', '12vw', '3.5vw']} {...props}>
+    <Box pos={'relative'} px={'15vw'} pt={['12vw', '12vw', '7vw']} pb={['12vw', '12vw', '3.5vw']} {...props}>
       <Grid
         templateRows={['repeat(2, 1fr)', 'repeat(2, 1fr)', 'repeat(2, 1fr)']}
         templateColumns={['repeat(2, 1fr)', 'repeat(2, 1fr)', 'repeat(12, 1fr)']}
