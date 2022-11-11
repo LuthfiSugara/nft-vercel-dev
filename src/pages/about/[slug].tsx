@@ -1,5 +1,6 @@
 import Layout from '@app/components/Common/Layout'
 import { Box } from '@chakra-ui/react'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 import * as React from 'react'
 
@@ -8,7 +9,9 @@ const Index = (props) => {
   return (
     <Layout>
       <Box mt={'5vw'}>
-        <div>{slug}</div>
+        <Link href={'/about'} passHref>
+          <div>{slug}</div>
+        </Link>
       </Box>
     </Layout>
   )

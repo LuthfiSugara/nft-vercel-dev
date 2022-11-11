@@ -31,7 +31,7 @@ const TopBuyers: React.FunctionComponent<ITopBuyersProps> = (props) => {
             w={'12vw'}
             h={'3.5vw'}
             borderRadius={'0.5vw'}
-            onClick={() => router.push('/marketplace')}
+            onClick={() => router.push('/top-aot?tab=buyers')}
           >
             {t('All Rankings')}
             <ArrowForwardIcon ml={'1vw'} />
