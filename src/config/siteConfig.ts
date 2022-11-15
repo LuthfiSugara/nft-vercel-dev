@@ -1,7 +1,6 @@
 export const siteConfig = {
   title: 'GIC Verse',
-  description:
-    'Grow your crypto assets with legion. Trade and earn benefits on profitable decentralized platform, with the balance of binance smart chain.',
+  description: 'Marketplace',
   social: {
     twitter: {
       username: 'GICTradeIO',

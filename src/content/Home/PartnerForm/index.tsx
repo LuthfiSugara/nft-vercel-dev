@@ -5,7 +5,7 @@ import BgImg from '@public/images/Landing/landing-invitation.png'
 import { useRouter } from 'next/router'
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 
-const Invitation = () => {
+const PartnerForm = () => {
   const router = useRouter()
   return (
     <Box pos={'relative'} width={'full'} height={'35vw'}>
@@ -30,7 +30,7 @@ const Invitation = () => {
               px={['1vw', '1vw', '2.5vw']}
               h={'3.5vw'}
               borderRadius={'0.5vw'}
-              onClick={() => router.push('/invitation')}
+              onClick={() => router.push('/partner-form')}
             >
               Get started
               <ArrowForwardIcon ml={'1vw'} />
@@ -42,4 +42,4 @@ const Invitation = () => {
   )
 }
 
-export default Invitation
+export default PartnerForm
