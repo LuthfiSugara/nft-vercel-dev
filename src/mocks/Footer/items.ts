@@ -1,5 +1,4 @@
-import FooterLogoIcon from '@public/images/Footer/Logo/footer_logo_icon.png'
-import { GICIcon, TwitterIcon, TelegramIcon, DiscordIcon } from '@app/components/Icons'
+import { GICIcon } from '@app/components/Icons'
 import { Icon } from '@chakra-ui/icons'
 import { FaDiscord, FaTelegramPlane, FaTwitter } from 'react-icons/fa'
 import { IconType } from 'react-icons'
@@ -11,7 +10,6 @@ interface LinkedContentProps {
 }
 
 interface FooterItems {
-  footerLogoIcon: StaticImageData
   GICIcon: typeof Icon
   exploreItems: LinkedContentProps[]
   myAccountItems: LinkedContentProps[]
@@ -19,7 +17,6 @@ interface FooterItems {
 }
 
 export const footerItems: FooterItems = {
-  footerLogoIcon: FooterLogoIcon,
   GICIcon: GICIcon,
   exploreItems: [
     {

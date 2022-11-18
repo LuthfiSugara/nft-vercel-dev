@@ -1,6 +1,6 @@
 import Balance from '@app/components/Balance'
 import { CheckCircleIcon } from '@chakra-ui/icons'
-import { Box, Center, Flex, Grid, GridItem, HStack, Image, SimpleGrid, Text } from '@chakra-ui/react'
+import { Box, Center, Flex, Grid, GridItem, HStack, Image, Text } from '@chakra-ui/react'
 import React, { FC } from 'react'
 
 interface ICollectionsCard {

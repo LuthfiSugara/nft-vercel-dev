@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { useTranslation } from '@app/context'
-import { Text, HStack, Flex, Button, Box, Grid } from '@chakra-ui/react'
+import { Text, HStack, Flex, Button, Grid } from '@chakra-ui/react'
 import LiveAuction from './LiveAuction'
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 import { useRouter } from 'next/router'
@@ -8,7 +8,7 @@ import { useRouter } from 'next/router'
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface ILiveAuctionsProps {}
 
-const LiveAuctions: React.FunctionComponent<ILiveAuctionsProps> = (props) => {
+const LiveAuctions: React.FunctionComponent<ILiveAuctionsProps> = () => {
   const { t } = useTranslation()
   const router = useRouter()
   return (
@@ -26,7 +26,7 @@ const LiveAuctions: React.FunctionComponent<ILiveAuctionsProps> = (props) => {
           px={['1vw', '1vw', '2.5vw']}
           h={'3.5vw'}
           borderRadius={'0.5vw'}
-          onClick={() => router.push('/marketplace')}
+          onClick={() => router.push('/marketplace?status=auction')}
         >
           {t('More')}
           <ArrowForwardIcon ml={'1vw'} />

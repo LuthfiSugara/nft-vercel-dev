@@ -1,12 +1,12 @@
 import * as React from 'react'
-import { Box, Center, Flex, Grid, GridItem, HStack, Image, Text, VStack } from '@chakra-ui/react'
+import { Box, Flex, Grid, GridItem, Image, Text } from '@chakra-ui/react'
 import { CheckCircleIcon } from '@chakra-ui/icons'
 import Balance from '@app/components/Balance'
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface ITopCollectionProps {}
 
-const TopCollection: React.FunctionComponent<ITopCollectionProps> = (props) => {
+const TopCollection: React.FunctionComponent<ITopCollectionProps> = () => {
   return (
     <Grid
       templateRows="repeat(10, 1fr)"

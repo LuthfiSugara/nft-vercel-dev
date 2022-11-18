@@ -6,7 +6,7 @@ import FeaturedCollectionsCard from '@app/components/FeaturedCollectionsCard'
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface IFeaturedCollectionProps {}
 
-const FeaturedCollection: React.FunctionComponent<IFeaturedCollectionProps> = (props) => {
+const FeaturedCollection: React.FunctionComponent<IFeaturedCollectionProps> = () => {
   return (
     <Box
       bgImage={

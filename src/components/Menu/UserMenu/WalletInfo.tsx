@@ -2,14 +2,8 @@ import React from 'react'
 import { useWeb3React } from '@web3-react/core'
 import useAuth from '@app/hooks/useAuth'
 import { InjectedModalProps, useTranslation } from '@app/context'
-import { getBscScanLink } from '@app/utils'
-import { getFullDisplayBalance, formatBigNumber } from '@app/utils/formatBalance'
-import tokens from '@app/config/constants/tokens'
-import { Button, Flex, Skeleton, Text } from '@chakra-ui/react'
+import { Button, Text } from '@chakra-ui/react'
 import CopyAddress from './CopyAddress'
-import useTokenBalance, { FetchStatus, useGetBnbBalance } from '@app/hooks/useTokenBalance'
-import LinkExternal from '@app/components/Link/LinkExternal'
-import WarningBanner from '@app/components/Banners/WarningBanner'
 
 interface WalletInfoProps {
   onDismiss: InjectedModalProps['onDismiss']

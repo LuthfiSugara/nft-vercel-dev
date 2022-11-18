@@ -87,7 +87,7 @@ const PartnerForm = () => {
           fontSize={'0.8vw'}
           h={'3vw'}
           mt={'0.7vw'}
-        />{' '}
+        />
         <HStack fontSize={'1vw'} mt={'2vw'}>
           <Text>What is current status of project</Text>
         </HStack>
@@ -99,7 +99,7 @@ const PartnerForm = () => {
           fontSize={'0.8vw'}
           h={'3vw'}
           mt={'0.7vw'}
-        />{' '}
+        />
         <HStack fontSize={'1vw'} mt={'2vw'}>
           <Text>Tell us more about your project</Text>
         </HStack>

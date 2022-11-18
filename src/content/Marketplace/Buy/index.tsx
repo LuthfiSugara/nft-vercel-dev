@@ -1,13 +1,13 @@
 import * as React from 'react'
-import { Box, Center, Flex, Grid, GridItem, HStack, Image as ImageChakra, Text } from '@chakra-ui/react'
+import { Center, Flex, Grid, GridItem, HStack, Image as ImageChakra, Text } from '@chakra-ui/react'
 import Balance from '@app/components/Balance'
 import WGICTIcon from '@public/images/Token/wgict.png'
 import Image from 'next/image'
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
-interface ILiveAuctionProps {}
+interface IBuyProps {}
 
-const LiveAuction: React.FunctionComponent<ILiveAuctionProps> = () => {
+const Buy: React.FunctionComponent<IBuyProps> = () => {
   return (
     <Grid templateRows="repeat(11, 1fr)" height={'20vw'} overflow={'hidden'} borderRadius={'0.7vw'} boxShadow={'lg'}>
       <GridItem
@@ -20,13 +20,7 @@ const LiveAuction: React.FunctionComponent<ILiveAuctionProps> = () => {
         backgroundRepeat={'no-repeat'}
         backgroundPosition={'center center'}
         width={'full'}
-      >
-        <Box pos={'absolute'} bottom={'0'} w={'100%'} p={'.3vw'} bgColor={'brand.bg.12'}>
-          <Text align={'center'} fontSize={'.9vw'} color={'gicv.white'}>
-            10d 12h 30m 12s
-          </Text>
-        </Box>
-      </GridItem>
+      ></GridItem>
       <GridItem rowSpan={5} bgColor={'white'} p={'.7vw'}>
         <Text fontSize={'1vw'} fontWeight={'bold'}>
           GICVerse #01
@@ -38,7 +32,7 @@ const LiveAuction: React.FunctionComponent<ILiveAuctionProps> = () => {
           </Text>
         </HStack>
         <Text fontSize={'0.8vw'} fontWeight={'bold'} color={'gray.500'} mt={'1.5vw'}>
-          Current Bid
+          Buy Now
         </Text>
         <Flex alignItems={'center'}>
           <Center pos={'relative'} w={['7vw', '7vw', '1.5vw']} h={['7vw', '7vw', '1.5vw']} overflow={'hidden'}>
@@ -58,4 +52,4 @@ const LiveAuction: React.FunctionComponent<ILiveAuctionProps> = () => {
   )
 }
 
-export default LiveAuction
+export default Buy

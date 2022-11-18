@@ -7,7 +7,7 @@ import SearchBar from './SearchBar'
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface ITopNavProps {}
 
-const TopNav: React.FunctionComponent<ITopNavProps> = (props) => {
+const TopNav: React.FunctionComponent<ITopNavProps> = () => {
   return (
     <Flex>
       <Menus />

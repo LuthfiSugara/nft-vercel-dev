@@ -6,7 +6,7 @@ import Menu from './Menu'
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface IMenusProps {}
 
-const Menus: React.FunctionComponent<IMenusProps> = (props) => {
+const Menus: React.FunctionComponent<IMenusProps> = () => {
   return (
     <HStack spacing={'4vw'} mx={'5vw'} w={'fit-content'}>
       {menus.map((_, idx) => (

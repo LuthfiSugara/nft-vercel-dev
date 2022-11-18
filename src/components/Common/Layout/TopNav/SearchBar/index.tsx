@@ -6,7 +6,7 @@ import * as React from 'react'
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface ISearchBarProps {}
 
-const SearchBar: React.FunctionComponent<ISearchBarProps> = (props) => {
+const SearchBar: React.FunctionComponent<ISearchBarProps> = () => {
   return (
     <InputGroup w={'30vw'} h={'2.5vw'}>
       <InputLeftElement

@@ -1,6 +1,5 @@
 import BigNumber from 'bignumber.js'
 import { Token } from '@aulyaaryansyah/legionswap-sdk-mainnet'
-import { NftToken, State as NftMarketState } from '@app/store/nftMarket/types'
 
 export type SerializedBigNumber = string
 
@@ -62,7 +61,6 @@ export interface Profile {
   tokenId: number
   isActive: boolean
   username: string
-  nft?: NftToken
   team: Team
   hasRegistered: boolean
 }
@@ -75,7 +73,6 @@ export interface ProfileState {
   profileAvatars: {
     [key: string]: {
       username: string
-      nft: NftToken
       hasRegistered: boolean
       usernameFetchStatus: ProfileAvatarFetchStatus
       avatarFetchStatus: ProfileAvatarFetchStatus
@@ -703,5 +700,4 @@ export interface State {
   teams: TeamsState
   voting: VotingState
   lottery: LotteryState
-  nftMarket: NftMarketState
 }

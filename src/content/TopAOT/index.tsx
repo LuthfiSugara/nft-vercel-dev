@@ -12,7 +12,7 @@ import SellersCard from './Sellers/SellersCard'
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface ITopAOTProps {}
 
-const TopAOT: React.FunctionComponent<ITopAOTProps> = (props) => {
+const TopAOT: React.FunctionComponent<ITopAOTProps> = () => {
   const { t } = useTranslation()
   const router = useRouter()
   const { tab } = router.query

@@ -1,14 +1,11 @@
 import { MaxUint256 } from '@ethersproject/constants'
-import { TokenAmount, ETHER, CurrencyAmount, Trade } from '@aulyaaryansyah/legionswap-sdk-mainnet'
+import { TokenAmount, ETHER, CurrencyAmount } from '@aulyaaryansyah/legionswap-sdk-mainnet'
 import { useCallback, useMemo } from 'react'
 import useActiveWeb3React from '@app/hooks/useActiveWeb3React'
 import useTokenAllowance from './useTokenAllowance'
-import { SWAP_FIELD } from '@app/store/swap/actions'
 import { useTransactionAdder, useHasPendingApproval } from '@app/store/transactions/hooks'
-import { computeSlippageAdjustedAmounts } from '@app/utils/prices'
 import { calculateGasMargin } from '@app/utils'
 import { useTokenContract } from './useContract'
-import { ROUTER_ADDRESS } from '@app/config/constants'
 import { useCallWithGasPrice } from './useCallWithGasPrice'
 
 export enum ApprovalState {
@@ -103,16 +100,4 @@ export function useApproveCallback(
   }, [approvalState, callWithGasPrice, token, tokenContract, amountToApprove, spender, addTransaction])
 
   return [approvalState, approve]
-}
-
-/**
- * Wraps useApproveCallback in the context of a swap
- */
-export function useApproveCallbackFromTrade(trade?: Trade, allowedSlippage = 0) {
-  const amountToApprove = useMemo(
-    () => (trade ? computeSlippageAdjustedAmounts(trade, allowedSlippage)[SWAP_FIELD.INPUT] : undefined),
-    [trade, allowedSlippage]
-  )
-
-  return useApproveCallback(amountToApprove, ROUTER_ADDRESS)
 }

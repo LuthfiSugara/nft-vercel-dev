@@ -1,10 +1,4 @@
 import {
-  // AnnouncementMenuIcon,
-  // HomeMenuIcon,
-  // InfoMenuIcon,
-  // FarmsMenuIcon,
-  // PoolsMenuIcon,
-  TradeMenuIcon,
   MarketMakerMenuIcon,
   BuyNFTMenuIcon,
   MyNFTMenuIcon,

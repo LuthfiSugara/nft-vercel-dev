@@ -3,7 +3,7 @@ import { Box } from '@chakra-ui/react'
 import Link from 'next/link'
 import * as React from 'react'
 
-const index = (props) => {
+const index = () => {
   return (
     <Layout>
       <Box mt={'5vw'}>

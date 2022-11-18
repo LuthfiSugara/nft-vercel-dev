@@ -1,13 +1,11 @@
-import { ChangeEvent, memo, useState } from 'react'
+import { memo } from 'react'
 import {
   Box,
   BoxProps,
   Button,
-  Center,
   Divider,
   Grid,
   GridItem,
-  Heading,
   HStack,
   Input,
   InputGroup,
@@ -16,13 +14,9 @@ import {
 } from '@chakra-ui/react'
 import { footerItems } from '@app/mocks'
 import Link from 'next/link'
-import Image from 'next/image'
-import { useRouter } from 'next/router'
-import { ArrowForwardIcon, EmailIcon, SearchIcon } from '@chakra-ui/icons'
+import { ArrowForwardIcon, EmailIcon } from '@chakra-ui/icons'
 
 const Footer: React.FC<BoxProps> = (props) => {
-  const router = useRouter()
-  const [value, setValue] = useState('')
   return (
     <Box pos={'relative'} px={'15vw'} pt={['12vw', '12vw', '7vw']} pb={['12vw', '12vw', '3.5vw']} {...props}>
       <Grid

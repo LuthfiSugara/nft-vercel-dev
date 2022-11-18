@@ -7,7 +7,7 @@ export const menus: IMenus[] = [
   },
   {
     label: 'Marketplace',
-    path: '/marketplace',
+    path: '/marketplace?status=buy',
   },
   {
     label: 'Collectible',

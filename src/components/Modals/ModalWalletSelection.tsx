@@ -5,10 +5,6 @@ import {
   ModalContent,
   ModalOverlay,
   ModalHeader,
-  ModalFooter,
-  Button,
-  VStack,
-  Divider,
   SimpleGrid,
 } from '@chakra-ui/react'
 import WalletButton from '@app/components/Buttons/WalletButton'

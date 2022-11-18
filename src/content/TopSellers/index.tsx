@@ -8,7 +8,7 @@ import { ArrowForwardIcon } from '@chakra-ui/icons'
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface ITopSellersProps {}
 
-const TopSellers: React.FunctionComponent<ITopSellersProps> = (props) => {
+const TopSellers: React.FunctionComponent<ITopSellersProps> = () => {
   const { t } = useTranslation()
   const router = useRouter()
   return (

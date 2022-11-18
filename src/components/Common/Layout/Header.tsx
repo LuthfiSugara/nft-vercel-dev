@@ -1,17 +1,15 @@
-import { Box, Flex, IconButton, Spacer, Button, Text, Avatar } from '@chakra-ui/react'
+import { Box, Flex, IconButton, Spacer, Button, Text } from '@chakra-ui/react'
 import Link from 'next/link'
-import { useScrollEvent } from '@app/hooks'
 import { useWeb3React } from '@web3-react/core'
 import ConnectWalletButton from '@app/components/Buttons/ConnectWalletButton'
 import { ModalWalletAccount } from '@app/components/Modals'
 import { useModal } from '@app/context/Modal/useModal'
 import { useSidebar } from '@app/context/Sidebar/useSidebar'
 import { memo } from 'react'
-import { LegionSiteLogo, LegionSiteLogoMobile, MenuIcon } from '@app/components/Icons'
+import { MenuIcon } from '@app/components/Icons'
 import TopNav from './TopNav'
 
 const Header: React.FC = () => {
-  const { scrolling } = useScrollEvent()
   const { account, active } = useWeb3React()
   const { onSidebarToggle } = useSidebar()
   const [onPresent] = useModal(<ModalWalletAccount />)
@@ -21,8 +19,8 @@ const Header: React.FC = () => {
       alignItems={'center'}
       py={['2vw', '2vw', '2vw']}
       px={['3.7vw', '3.7vw', '4vw']}
-      position="relative"
-      // top={scrolling ? '-1000' : '0'}
+      position="sticky"
+      top={0}
       transition="top 200ms ease-in-out"
       zIndex={20}
       width="full"
@@ -37,12 +35,6 @@ const Header: React.FC = () => {
           aria-label="menu"
           size={'lg'}
           bg="transparent"
-          // _hover={{
-          //   backgroundColor: 'gicv.light',
-          // }}
-          // _active={{
-          //   backgroundColor: 'gicv.light',
-          // }}
           onClick={onSidebarToggle}
           icon={<MenuIcon />}
         />

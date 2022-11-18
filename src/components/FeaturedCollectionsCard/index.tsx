@@ -1,13 +1,13 @@
 import { Box, Center, Flex, Image as ImageChakra, Text } from '@chakra-ui/react'
 import * as React from 'react'
-import WGICTIcon from '@public/images/MarketMaker/BuyNFT/wgict_icon.png'
+import WGICTIcon from '@public/images/Token/wgict.png'
 import Image from 'next/image'
 import Balance from '../Balance'
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface IFeaturedCollectionsCardProps {}
 
-const FeaturedCollectionsCard: React.FunctionComponent<IFeaturedCollectionsCardProps> = (props) => {
+const FeaturedCollectionsCard: React.FunctionComponent<IFeaturedCollectionsCardProps> = () => {
   return (
     <Box
       borderRadius={'1vw'}

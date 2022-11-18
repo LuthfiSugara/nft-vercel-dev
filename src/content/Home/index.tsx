@@ -1,4 +1,4 @@
-import { Box, Text } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 import Image from 'next/image'
 import * as React from 'react'
 import bgImg from '@public/images/Landing/landing-banner-bg.png'

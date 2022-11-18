@@ -5,9 +5,9 @@ import WGICTIcon from '@public/images/Token/wgict.png'
 import Image from 'next/image'
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
-interface ILiveAuctionProps {}
+interface IAuctionProps {}
 
-const LiveAuction: React.FunctionComponent<ILiveAuctionProps> = () => {
+const Auction: React.FunctionComponent<IAuctionProps> = () => {
   return (
     <Grid templateRows="repeat(11, 1fr)" height={'20vw'} overflow={'hidden'} borderRadius={'0.7vw'} boxShadow={'lg'}>
       <GridItem
@@ -58,4 +58,4 @@ const LiveAuction: React.FunctionComponent<ILiveAuctionProps> = () => {
   )
 }
 
-export default LiveAuction
+export default Auction

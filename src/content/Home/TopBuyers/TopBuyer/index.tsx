@@ -1,12 +1,12 @@
 import * as React from 'react'
-import { Box, Center, Flex, Grid, GridItem, HStack, Image, Text, VStack } from '@chakra-ui/react'
+import { Box, HStack, Image, Text } from '@chakra-ui/react'
 import { CheckCircleIcon } from '@chakra-ui/icons'
 import Balance from '@app/components/Balance'
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface ITopBuyerProps {}
 
-const TopBuyer: React.FunctionComponent<ITopBuyerProps> = (props) => {
+const TopBuyer: React.FunctionComponent<ITopBuyerProps> = () => {
   return (
     <HStack w={'19vw'}>
       <Box position={'relative'} w={'3vw'} h={'3vw'} mr={'1vw'}>

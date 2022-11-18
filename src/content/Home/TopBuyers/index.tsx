@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { useTranslation } from '@app/context'
-import { Text, HStack, Flex, Button, Box, SimpleGrid, VStack } from '@chakra-ui/react'
+import { Text, HStack, Flex, Button, Box } from '@chakra-ui/react'
 import TopBuyer from './TopBuyer'
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 import { useRouter } from 'next/router'
@@ -9,7 +9,7 @@ import { withCustomScrollBar } from '@app/config/theme/withCustomScrollbar'
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface ITopBuyersProps {}
 
-const TopBuyers: React.FunctionComponent<ITopBuyersProps> = (props) => {
+const TopBuyers: React.FunctionComponent<ITopBuyersProps> = () => {
   const { t } = useTranslation()
   const router = useRouter()
   return (

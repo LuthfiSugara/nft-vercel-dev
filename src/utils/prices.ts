@@ -6,9 +6,6 @@ import {
   ALLOWED_PRICE_IMPACT_MEDIUM,
 } from '../config/constants'
 
-import { SWAP_FIELD } from '@app/store/swap/actions'
-import { basisPointsToPercent } from './index'
-
 const BASE_FEE = new Percent(JSBI.BigInt(25), JSBI.BigInt(10000))
 const ONE_HUNDRED_PERCENT = new Percent(JSBI.BigInt(10000), JSBI.BigInt(10000))
 const INPUT_FRACTION_AFTER_FEE = ONE_HUNDRED_PERCENT.subtract(BASE_FEE)
@@ -50,13 +47,6 @@ export function computeTradePriceBreakdown(trade?: Trade | null) {
 /**
  * Computes the minimum amount out and maximum amount in for a trade given a user specified allowed slippage in bips
  */
-export function computeSlippageAdjustedAmounts(trade: Trade | undefined, allowedSlippage: number) {
-  const pct = basisPointsToPercent(allowedSlippage)
-  return {
-    [SWAP_FIELD.INPUT]: trade?.maximumAmountIn(pct),
-    [SWAP_FIELD.OUTPUT]: trade?.minimumAmountOut(pct),
-  }
-}
 
 export function warningSeverity(priceImpact?: Percent) {
   if (!priceImpact?.lessThan(BLOCKED_PRICE_IMPACT_NON_EXPERT)) return 4
