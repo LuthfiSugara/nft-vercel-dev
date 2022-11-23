@@ -22,7 +22,7 @@ import React, { useEffect, useState } from 'react'
 import Auction from './Auction'
 import Buy from './Buy'
 
-const Marketplace = () => {
+const Marketplace: React.FunctionComponent = () => {
   const { t } = useTranslation()
   const router = useRouter()
   const { status } = router.query
