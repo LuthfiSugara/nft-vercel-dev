@@ -50,7 +50,7 @@ const Marketplace: React.FunctionComponent = () => {
 
   return (
     <Flex pt={'2.7vw'}>
-      <Box px={'3vw'} width={'22.5vw'} borderRight={'0.1vw solid'} borderColor={'gicv.gray.100'}>
+      <Box px={'3vw'} width={'27vw'} borderRight={'0.1vw solid'} borderColor={'gicv.gray.100'}>
         <Text fontSize={'1vw'} fontWeight={'bold'} borderBottom={'0.1vw solid'} borderColor={'gicv.gray.100'} p={'1vw'}>
           Filter
         </Text>

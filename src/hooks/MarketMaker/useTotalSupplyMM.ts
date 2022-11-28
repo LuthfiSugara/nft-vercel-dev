@@ -60,8 +60,6 @@ export const useTotalSupplyMM = () => {
       const marketMakerContract = getMarketMakerContract()
       const supply = await marketMakerContract.name()
       // setTotalSupply(new BigNumber(supply.toString()))
-      console.log('Isi Contract : ', marketMakerContract)
-      console.log('Name : ', supply)
     }
 
     fetchTotalSupply()
