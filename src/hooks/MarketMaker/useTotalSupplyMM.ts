@@ -3,7 +3,7 @@ import { ethers } from 'ethers'
 import BigNumber from 'bignumber.js'
 import { useWeb3React } from '@web3-react/core'
 import tokens from '@app/config/constants/tokens'
-import { getBep20Contract, getMarketMakerContract, getMasterchefContract } from '@app/utils/contractHelpers'
+import { getBep20Contract, getMasterchefContract } from '@app/utils/contractHelpers'
 import { BIG_ZERO } from '@app/utils/bigNumber'
 import { simpleRpcProvider } from '@app/utils/providers'
 import useRefresh from '../useRefresh'
@@ -51,22 +51,22 @@ const useTokenBalance = (tokenAddress: string) => {
   return balanceState
 }
 
-export const useTotalSupplyMM = () => {
-  const { slowRefresh } = useRefresh()
-  // const [totalSupply, setTotalSupply] = useState<BigNumber>()
+// export const useTotalSupplyMM = () => {
+//   const { slowRefresh } = useRefresh()
+//   // const [totalSupply, setTotalSupply] = useState<BigNumber>()
 
-  useEffect(() => {
-    async function fetchTotalSupply() {
-      const marketMakerContract = getMarketMakerContract()
-      const supply = await marketMakerContract.name()
-      // setTotalSupply(new BigNumber(supply.toString()))
-    }
+//   useEffect(() => {
+//     async function fetchTotalSupply() {
+//       const marketMakerContract = getMarketMakerContract()
+//       const supply = await marketMakerContract.name()
+//       // setTotalSupply(new BigNumber(supply.toString()))
+//     }
 
-    fetchTotalSupply()
-  }, [slowRefresh])
+//     fetchTotalSupply()
+//   }, [slowRefresh])
 
-  // return totalSupply
-}
+//   // return totalSupply
+// }
 
 // export const useAddMinterMM = () => {
 //   const { slowRefresh } = useRefresh()
