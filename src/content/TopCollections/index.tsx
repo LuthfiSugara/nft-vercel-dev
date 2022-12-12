@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { useTranslation } from '@app/context'
-import { Box, Button, Center, Flex, SimpleGrid, Text, VStack } from '@chakra-ui/react'
+import { Box, Button, Center, Flex, Text, VStack } from '@chakra-ui/react'
 import TopCollection from './TopCollection'
 import { useRouter } from 'next/router'
 import { ArrowForwardIcon } from '@chakra-ui/icons'
