@@ -18,7 +18,7 @@ import { ArrowForwardIcon, EmailIcon } from '@chakra-ui/icons'
 
 const Footer: React.FC<BoxProps> = (props) => {
   return (
-    <Box pos={'relative'} px={'15vw'} pt={['12vw', '12vw', '7vw']} pb={['12vw', '12vw', '3.5vw']} {...props}>
+    <Box pos={'relative'} px={['5vw', '15vw']} pt={['12vw', '12vw', '7vw']} pb={['12vw', '12vw', '3.5vw']} {...props}>
       <Grid
         templateRows={['repeat(2, 1fr)', 'repeat(2, 1fr)', 'repeat(2, 1fr)']}
         templateColumns={['repeat(2, 1fr)', 'repeat(2, 1fr)', 'repeat(12, 1fr)']}
@@ -26,16 +26,16 @@ const Footer: React.FC<BoxProps> = (props) => {
         mb={'5vw'}
       >
         <GridItem rowSpan={1} colSpan={[2, 2, 7]}>
-          <Text fontSize={'2.2vw'} fontWeight={'extrabold'}>
+          <Text fontSize={['5vw', '2.2vw']} fontWeight={'extrabold'}>
             Get in touch
           </Text>
-          <Text fontSize={'0.95vw'}>
+          <Text fontSize={['2vw', '0.95vw']}>
             Enim non justo, aenean fermentum nulla et turpis diam nisi non ornare tristique eget tristique nunc tellus
             egestas
           </Text>
           <HStack spacing={'1vw'} mt={'2vw'}>
-            <InputGroup w={'30vw'} h={'3vw'}>
-              <InputLeftElement pointerEvents="none" fontSize={'1vw'} w={'2vw'} h={'3vw'} py={0} px={'1.5vw'}>
+            <InputGroup w={['full','30vw']} h={'3vw'}>
+              <InputLeftElement pointerEvents="none" fontSize={'1vw'} w={'2vw'} h={['5vw', '3vw']} py={0} px={'1.5vw'}>
                 <EmailIcon color="gray" />
               </InputLeftElement>
               <Input
@@ -46,16 +46,16 @@ const Footer: React.FC<BoxProps> = (props) => {
                 borderColor={'gray'}
                 fontSize={'0.8vw'}
                 pl={'3vw'}
-                h={'3vw'}
+                h={['5vw', '3vw']}
               />
             </InputGroup>
             <Button
               colorScheme={'primary'}
               fontSize={['1vw', '1vw', '1vw']}
               px={['1vw', '1vw', '2.5vw']}
-              h={'3vw'}
+              h={['5vw', '3vw']}
               borderRadius={'0.4vw'}
-              mt={'2vw'}
+              mt={['4vw', '2vw']}
               // onClick={() => router.push('/gic-store')}
             >
               Send
@@ -142,7 +142,7 @@ const Footer: React.FC<BoxProps> = (props) => {
               Privacy Policy
             </Text>
           </Link>
-          <Link href={'terms-of-service'} passHref>
+          <Link href={'/terms-of-service'} passHref>
             <Text w={'fit-content'} fontSize={['4.5vw', '4.5vw', '1.1vw']} fontWeight={'regular'} cursor={'pointer'}>
               Terms of Service
             </Text>
