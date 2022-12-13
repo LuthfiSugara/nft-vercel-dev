@@ -35,7 +35,7 @@ const Firstbanner: React.FC = () => {
         </Box>
       </Center>
       <Center w={'48%'}>
-        <Image src={NFTBundle} alt={''} placeholder={'blur'} />
+        <Image src="/images/Landing/nft-bundle.png" alt={'Banner NFT'} placeholder={'blur'} />
       </Center>
     </HStack>
   )
