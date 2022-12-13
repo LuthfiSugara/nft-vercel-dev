@@ -1,39 +1,27 @@
-image: node:14.17.6
+#  Template NodeJS build
+
+#  This template allows you to validate your NodeJS code.
+#  The workflow allows running tests and code linting on the default branch.
+
+image: node:16
 
 pipelines:
   branches:
-    main:
-      - step:
-          name: Code Coverage
-          caches:
-            - node
-          script:
-            - yarn install
-            - yarn lint
-            - yarn format:check
-      - step:
-          name: Build Test
-          caches:
-            - node
-          script:
-            - yarn install
-            - yarn build
-  pull-requests:
-    "**":
-      - parallel:
-          - step:
-              name: Code Coverage
-              caches:
-                - node
-              script:
-                - yarn install
-                - yarn lint
-                - yarn ts:check
-                - yarn format:check
-          - step:
-              name: Build Test
-              caches:
-                - node
-              script:
-                - yarn install
-                - yarn build
+    develop:
+    - parallel:
+        - step:
+            name: Build Test
+            caches:
+              - node
+            script:
+              - yarn
+              - yarn build
+        - step:
+            name: Deploy to staging
+            deployment: staging
+            script:
+              - pipe: atlassian/ssh-run:0.4.1
+                variables:
+                 SSH_USER: 'pm2'
+                 SERVER: '192.46.231.139'
+                 COMMAND: '/bin/bash pipeline-deploy/run-FEMarketplace.sh'
