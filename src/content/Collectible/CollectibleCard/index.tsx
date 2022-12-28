@@ -2,11 +2,13 @@ import * as React from 'react'
 import { Box, Flex, Grid, GridItem, Image, Text } from '@chakra-ui/react'
 import { CheckCircleIcon } from '@chakra-ui/icons'
 import Balance from '@app/components/Balance'
+import { useRouter } from 'next/router'
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface ICollectibleCardProps {}
 
 const CollectibleCard: React.FunctionComponent<ICollectibleCardProps> = () => {
+  const router = useRouter()
   return (
     <Grid
       templateRows="repeat(10, 1fr)"
@@ -15,6 +17,8 @@ const CollectibleCard: React.FunctionComponent<ICollectibleCardProps> = () => {
       overflow={'hidden'}
       borderRadius={'1.5vw'}
       boxShadow={'lg'}
+      onClick={() => router.push('collectible/profile-user')}
+      sx={{ cursor: 'pointer' }}
     >
       <GridItem
         rowSpan={6}
