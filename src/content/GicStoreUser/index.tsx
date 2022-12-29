@@ -1,4 +1,5 @@
 import { Box, Center, Collapse, Flex, Heading, HStack, Image, SimpleGrid, Spacer, Stack, Tab, TabList, TabPanel, TabPanels, Tabs, Text } from '@chakra-ui/react'
+import router from 'next/router';
 import React, { useState } from 'react'
 
 const Index = () => {
@@ -330,7 +331,11 @@ const Index = () => {
                     my={'35px'}
                 >
                     <SimpleGrid columns={4} spacing={10}>
-                        <Box boxShadow={'base'} borderRadius={'xl'}>
+                        <Box 
+                            boxShadow={'base'} borderRadius={'xl'} 
+                            onClick={() => router.push('/gic-store/detail-nft')}
+                            cursor={'pointer'}
+                        >
                             <Image src='/images/nft/typeNft.png' alt='nft' w={'100%'} borderTopRadius='xl' />
                             <Stack p={4} spacing='8px'>
                                 <Text fontSize='xs' as='b'>Bronze</Text>
@@ -358,7 +363,11 @@ const Index = () => {
                                 </Stack>
                             </Stack>
                         </Box>
-                        <Box boxShadow={'base'} borderRadius={'xl'}>
+                        <Box 
+                            boxShadow={'base'} borderRadius={'xl'} 
+                            onClick={() => router.push('/gic-store/detail-nft')}
+                            cursor={'pointer'}
+                        >
                             <Image src='/images/nft/typeNft.png' alt='nft' w={'100%'} borderTopRadius='xl' />
                             <Stack p={4} spacing='8px'>
                                 <Text fontSize='xs' as='b'>Bronze</Text>
@@ -386,7 +395,11 @@ const Index = () => {
                                 </Stack>
                             </Stack>
                         </Box>
-                        <Box boxShadow={'base'} borderRadius={'xl'}>
+                        <Box 
+                            boxShadow={'base'} borderRadius={'xl'} 
+                            onClick={() => router.push('/gic-store/detail-nft')}
+                            cursor={'pointer'}
+                        >
                             <Image src='/images/nft/typeNft.png' alt='nft' w={'100%'} borderTopRadius='xl' />
                             <Stack p={4} spacing='8px'>
                                 <Text fontSize='xs' as='b'>Bronze</Text>
@@ -414,7 +427,11 @@ const Index = () => {
                                 </Stack>
                             </Stack>
                         </Box>
-                        <Box boxShadow={'base'} borderRadius={'xl'}>
+                        <Box 
+                            boxShadow={'base'} borderRadius={'xl'} 
+                            onClick={() => router.push('/gic-store/detail-nft')}
+                            cursor={'pointer'}
+                        >
                             <Image src='/images/nft/typeNft.png' alt='nft' w={'100%'} borderTopRadius='xl' />
                             <Stack p={4} spacing='8px'>
                                 <Text fontSize='xs' as='b'>Bronze</Text>
