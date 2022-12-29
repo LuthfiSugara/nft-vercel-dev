@@ -9,6 +9,7 @@ import burn from './burn/slice'
 import info from './info'
 import { load, save } from 'redux-localstorage-simple'
 import updateVersion from './global/actions'
+import nft from './features/nft/index';
 
 const PERSISTED_KEYS = ['user', 'transactions', 'lists']
 
@@ -22,6 +23,7 @@ const store = configureStore({
     multicall,
     transactions,
     user,
+    nft,
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(save({ states: PERSISTED_KEYS })),
   preloadedState: load({ states: PERSISTED_KEYS, disableWarnings: true }),

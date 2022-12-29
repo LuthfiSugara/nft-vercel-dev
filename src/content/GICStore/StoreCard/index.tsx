@@ -2,6 +2,7 @@ import * as React from 'react'
 import { Box, Flex, Grid, GridItem, Image, Text } from '@chakra-ui/react'
 import { CheckCircleIcon } from '@chakra-ui/icons'
 import Balance from '@app/components/Balance'
+import router from 'next/router'
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface IStoreCardProps {}
@@ -15,6 +16,8 @@ const StoreCard: React.FunctionComponent<IStoreCardProps> = () => {
       overflow={'hidden'}
       borderRadius={'1.5vw'}
       boxShadow={'lg'}
+      cursor={'pointer'}
+      onClick={() => router.push('/gic-store/user')}
     >
       <GridItem
         rowSpan={6}
