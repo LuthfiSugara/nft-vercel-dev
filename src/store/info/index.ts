@@ -49,7 +49,7 @@ export default createReducer(initialState, (builder) =>
       })
     })
     .addCase(addPoolKeys, (state, { payload: { poolAddresses } }) => {
-      poolAddresses.forEach((address) => {
+      poolAddresses.forEach((address) => {``
         if (!state.pools.byAddress[address]) {
           state.pools.byAddress[address] = {
             data: undefined,

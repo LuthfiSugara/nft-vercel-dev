@@ -26,6 +26,7 @@ const config = {
     ]
   },
   images: {
+    disableStaticImages: false,
     domains: [
       'api.gicindonesia.com',
       'api.staging.gicindonesia.com',

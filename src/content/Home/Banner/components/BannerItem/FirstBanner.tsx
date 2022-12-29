@@ -1,8 +1,8 @@
 import { Box, Button, Center, HStack, Text } from '@chakra-ui/react'
-import Image from 'next/image'
 import NFTBundle from '@public/images/Landing/nft-bundle.png'
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 import { useRouter } from 'next/router'
+import { Image } from '@chakra-ui/react'
 
 const Firstbanner: React.FC = () => {
   const router = useRouter()
@@ -35,7 +35,12 @@ const Firstbanner: React.FC = () => {
         </Box>
       </Center>
       <Center w={'48%'}>
-        <Image src="/images/Landing/nft-bundle.png" alt={'Banner NFT'} placeholder={'blur'} />
+        <Image
+          src='/images/Landing/nft-bundle.png'
+          alt='Banner'
+          objectFit='cover'
+          boxSize={'full'}
+        />
       </Center>
     </HStack>
   )
