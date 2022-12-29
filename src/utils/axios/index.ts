@@ -7,3 +7,7 @@ export const GlobalAPI = axios.create({
 export const ExternalAPIGic = axios.create({
   baseURL: process.env.EXTERNAL_API_GIC,
 })
+
+export const APIMarketMaker = axios.create({
+  baseURL: process.env.MARKET_PLACE_API,
+})
