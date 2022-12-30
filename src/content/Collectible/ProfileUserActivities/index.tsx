@@ -1,4 +1,3 @@
-import { CheckCircleIcon } from '@chakra-ui/icons'
 import {
   Box,
   Checkbox,
@@ -8,26 +7,39 @@ import {
   GridItem,
   HStack,
   Image,
-  ListItem,
   Select,
   Stack,
   Text,
-  UnorderedList,
-  VStack,
 } from '@chakra-ui/react'
 import React from 'react'
 
-const Profile_user_Activities = () => {
+const ProfileUserActivities = () => {
   return (
     <Box>
       <Flex justifyContent="center" py={5}>
         <CheckboxGroup colorScheme="orange" defaultValue={['Sales']}>
           <Stack spacing={[1, 5]} direction={['column', 'row']}>
-            <Checkbox value="Sales">Sales</Checkbox>
-            <Checkbox value="Listings">Listings</Checkbox>
-            <Checkbox value="Offers">Offers</Checkbox>
-            <Checkbox value="Transfers">Transfers</Checkbox>
-            <Select placeholder="All Of Time">
+            <Checkbox fontWeight="bold" size="sm" colorScheme="orange" defaultChecked value="Sales">
+              Sales
+            </Checkbox>
+            <Checkbox fontWeight="bold" size="sm" colorScheme="orange" defaultChecked value="Listings">
+              Listings
+            </Checkbox>
+            <Checkbox fontWeight="bold" size="sm" colorScheme="orange" defaultChecked value="Offers">
+              Offers
+            </Checkbox>
+            <Checkbox fontWeight="bold" size="sm" colorScheme="orange" defaultChecked value="Transfers">
+              Transfers
+            </Checkbox>
+            <Select
+              fontSize={'1.1vw'}
+              fontWeight={'normal'}
+              borderColor={'gicv.black'}
+              defaultValue={'price-low-to-high'}
+              w={'15vw'}
+              placeholder="All Of Time"
+              pl={5}
+            >
               <option value="option1">Option 1</option>
               <option value="option2">Option 2</option>
               <option value="option3">Option 3</option>
@@ -217,4 +229,4 @@ const Profile_user_Activities = () => {
   )
 }
 
-export default Profile_user_Activities
+export default ProfileUserActivities
