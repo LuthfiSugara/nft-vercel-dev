@@ -4,9 +4,9 @@ import SEO from '@app/components/Common/Seo'
 import { ChevronDownIcon } from '@chakra-ui/icons'
 import { Box, Flex, Heading, HStack, Image, Tab, TabList, TabPanel, TabPanels, Tabs, Text } from '@chakra-ui/react'
 import Marketplace from '@app/content/Marketplace'
-import Profile_user_Activities from '@app/content/Collectible/Profile-user-activities'
+import Profile_user_Activities from '@app/content/Collectible/ProfileUserActivities'
 
-export default function CollectiblePage() {
+export default function profileUserView() {
   return (
     <Layout>
       <SEO />
@@ -138,10 +138,10 @@ export default function CollectiblePage() {
       <Box justifyContent="center" alignItems="center" pt={10}>
         <Flex justifyContent="space-evenly" width="55%" margin="auto">
           <Flex justifyContent="center" width="40%">
-            <Text fontSize="15px" color="#6C757D" fontWeight="bold">
+            <Text fontSize="13px" color="#6C757D" fontWeight="bold">
               Created
             </Text>
-            <Text fontWeight="bold" fontSize="15px">
+            <Text fontWeight="bold" fontSize="13px" pl={1}>
               Sep 2022
             </Text>
           </Flex>
@@ -186,8 +186,12 @@ export default function CollectiblePage() {
         <Tabs>
           <Flex justifyContent="center" alignItems="center" TextAlign="center" my={10}>
             <TabList>
-              <Tab>Items</Tab>
-              <Tab>Activities</Tab>
+              <Tab fontSize="14px" fontWeight="bold">
+                Items
+              </Tab>
+              <Tab fontSize="14px" fontWeight="bold">
+                Activities
+              </Tab>
             </TabList>
           </Flex>
           <hr />
