@@ -27,7 +27,7 @@ const nftSlice = createSlice({
             return {
                 ...state,
                 loading: false,
-                total: 5,
+                total: action.payload,
             }
         }
     }
