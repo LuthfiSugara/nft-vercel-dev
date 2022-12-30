@@ -37,6 +37,7 @@ const config = {
       'pancakeswap.finance',
       'assets.trustwalletapp.com',
       'exchange.pancakeswap.finance',
+      'front-marketplace.legionswap.com',
     ],
   },
 }
