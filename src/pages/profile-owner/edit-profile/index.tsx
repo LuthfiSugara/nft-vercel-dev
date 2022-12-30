@@ -1,11 +1,12 @@
-import React from 'react'
+import Layout from '@app/components/Common/Layout'
+import SEO from '@app/components/Common/Seo'
+import EditProfile from '@app/content/Collectible/Profile-owner-items/EditProfile'
 
-const Index = () => {
+export default function Index() {
   return (
-    <div>
-      
-    </div>
+    <Layout>
+      <SEO />
+      <EditProfile />
+    </Layout>
   )
 }
-
-export default Index
