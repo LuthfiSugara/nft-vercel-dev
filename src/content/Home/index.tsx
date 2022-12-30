@@ -1,7 +1,5 @@
-import { Box } from '@chakra-ui/react'
-import Image from 'next/image'
+import { Box, Image } from '@chakra-ui/react'
 import * as React from 'react'
-import bgImg from '@public/images/Landing/landing-banner-bg.png'
 import Banner from './Banner'
 import FeaturedCollections from './FeaturedCollections'
 import TopCollections from './TopCollections'
@@ -15,7 +13,7 @@ const Home: React.FunctionComponent = () => {
     <Box>
       <Box height={'50vw'}>
         <Box position={'absolute'} w={'full'}>
-          <Image src={bgImg} placeholder={'blur'} sizes={'100vw'} alt={''} />
+          <Image src='/images/Landing/landing-banner-bg.png' sizes={'100vw'} alt={''} />
         </Box>
         <Banner />
       </Box>
