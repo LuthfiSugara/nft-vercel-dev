@@ -496,6 +496,7 @@ const NFTDetail: React.FunctionComponent = () => {
                 <Box 
                   boxShadow={'base'} 
                   borderRadius={'xl'} 
+                  key={idx}
                 >
                   <Box w='100%'>
                     <Image src='/images/nft/nftBull.png' alt='nft' w={'100%'} borderTopRadius='xl' />

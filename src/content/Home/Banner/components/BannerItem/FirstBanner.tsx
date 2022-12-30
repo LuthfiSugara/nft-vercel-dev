@@ -1,5 +1,4 @@
 import { Box, Button, Center, HStack, Text } from '@chakra-ui/react'
-import NFTBundle from '@public/images/Landing/nft-bundle.png'
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 import { useRouter } from 'next/router'
 import { Image } from '@chakra-ui/react'

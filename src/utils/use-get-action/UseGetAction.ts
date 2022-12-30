@@ -1,9 +1,10 @@
 import log from "../remove-console";
 
 
-const UseGetAction = (url: string, type: any, queries: object, isPagination: boolean) => {
+const UseGetAction = (url: string, queries: object) => {
     try{
         let qr = '?';
+        url = url;
         if(queries != undefined){
             for(let query in queries){
                 qr += `${query}=${queries[query]}&`
