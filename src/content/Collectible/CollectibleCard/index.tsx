@@ -17,7 +17,7 @@ const CollectibleCard: React.FunctionComponent<ICollectibleCardProps> = () => {
       overflow={'hidden'}
       borderRadius={'1.5vw'}
       boxShadow={'lg'}
-      onClick={() => router.push('collectible/profileUserView')}
+      onClick={() => router.push('collectible/profile-user')}
       sx={{ cursor: 'pointer' }}
     >
       <GridItem
