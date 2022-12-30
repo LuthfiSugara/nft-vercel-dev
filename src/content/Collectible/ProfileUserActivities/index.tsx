@@ -117,6 +117,7 @@ const ProfileUserActivities = () => {
             Date
           </GridItem>
         </Grid>
+        
         <br />
         <Grid templateColumns="repeat(7, 1fr)" gap="20px">
           <GridItem w="100%" py={2}>

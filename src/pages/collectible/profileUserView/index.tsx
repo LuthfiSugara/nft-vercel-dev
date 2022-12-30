@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Layout from '@app/components/Common/Layout'
 import SEO from '@app/components/Common/Seo'
-import { ChevronDownIcon } from '@chakra-ui/icons'
-import { Box, Flex, Heading, HStack, Image, Tab, TabList, TabPanel, TabPanels, Tabs, Text } from '@chakra-ui/react'
+import { Box, Center, Collapse, Flex, Heading, HStack, Image, Tab, TabList, TabPanel, TabPanels, Tabs, Text } from '@chakra-ui/react'
 import Marketplace from '@app/content/Marketplace'
 import Profile_user_Activities from '@app/content/Collectible/ProfileUserActivities'
 
 export default function profileUserView() {
+  const [showDesc, setShowDesc] = useState(false);  
+
+  const toggleDesc = () => {
+        showDesc ? setShowDesc(false) : setShowDesc(true);
+    }
+
+    
   return (
     <Layout>
       <SEO />
@@ -170,26 +176,39 @@ export default function profileUserView() {
           </Flex>
         </Flex>
 
-        <Box textAlign={'center'} pt={'2vw'} px={'15vw'}>
-          <Text fontSize={'1.1vw'} pt={'1.5vw'}>
-            Augue pellentesque a, molestie nisi scelerisque in turpis urna hendrerit purus libero, dictum nisl, eget
-            accumsan scelerisque duis massa aliquam elit, leo turpis magnis diam netus ut nunc scelerisque at augue non
-            vel, faucibus risus netus ornare vitae viverra nec vestibulum vel diam in sagittis neque, at vulputate
-            turpis tempor elit risus tempus quam semper ut sagittis.
-            <Text fontWeight="bold" color="orange" justifyContent="center">
-              See More <ChevronDownIcon w={7} h={7} />
-            </Text>
-          </Text>
-        </Box>
+        <Center>
+                <Box 
+                    w='50%'
+                    my={'35px'}
+                >
+                    <Collapse startingHeight={40} in={showDesc}>
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                        terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
+                        labore wes anderson cred nesciunt sapiente ea proident.
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                        terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
+                        labore wes anderson cred nesciunt sapiente ea proident.
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                        terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
+                        labore wes anderson cred nesciunt sapiente ea proident.
+                    </Collapse>
+                    <HStack onClick={() => toggleDesc()} justify={'center'}>
+                        <Text align={'center'} color={'orange.500'}>{showDesc ? "See Less" : "See More" }</Text>
+                        {showDesc ? <Image src='/icons/chevron-up.svg' alt='chevron' />
+                        : <Image src='/icons/chevron-down.svg' alt='chevron' /> }
+                        
+                    </HStack>
+                </Box>
+            </Center>
       </Box>
       <Box>
-        <Tabs>
+        <Tabs variant='unstyled'>
           <Flex justifyContent="center" alignItems="center" TextAlign="center" my={10}>
             <TabList>
-              <Tab fontSize="14px" fontWeight="bold">
+              <Tab fontSize="14px" fontWeight="bold" _selected={{ color: '#000000', borderBottom:'2px', borderColor: '#000000' }}>
                 Items
               </Tab>
-              <Tab fontSize="14px" fontWeight="bold">
+              <Tab fontSize="14px" fontWeight="bold" _selected={{ color: '#000000', borderBottom:'2px', borderColor: '#000000' }}>
                 Activities
               </Tab>
             </TabList>
