@@ -1,6 +1,4 @@
-import { Box, Center, SimpleGrid, Text } from '@chakra-ui/react'
-import Image from 'next/image'
-import BgImg from '@public/images/GICStore/gic-store-banner-bg.png'
+import { Box, Center, Image, SimpleGrid, Text } from '@chakra-ui/react'
 import StoreCard from './StoreCard'
 
 const GICStore: React.FunctionComponent = () => {
@@ -8,7 +6,7 @@ const GICStore: React.FunctionComponent = () => {
     <Box>
       <Box height={'30vw'}>
         <Box position={'absolute'} w={'full'}>
-          <Image src={BgImg} placeholder={'blur'} sizes={'100vw'} alt={''} />
+          <Image src='/images/GICStore/gic-store-banner-bg.png' placeholder={'blur'} sizes={'100vw'} alt={''} />
         </Box>
       </Box>
       <Box textAlign={'center'} pt={'2vw'} px={'15vw'}>
