@@ -6,7 +6,7 @@ const GICStore: React.FunctionComponent = () => {
     <Box>
       <Box height={'30vw'}>
         <Box position={'absolute'} w={'full'}>
-          <Image src='/images/GICStore/gic-store-banner-bg.png' placeholder={'blur'} sizes={'100vw'} alt={''} />
+          <Image src={`${process.env.APP_URL}/images/GICStore/gic-store-banner-bg.png`} placeholder={'blur'} sizes={'100vw'} alt={''} />
         </Box>
       </Box>
       <Box textAlign={'center'} pt={'2vw'} px={'15vw'}>

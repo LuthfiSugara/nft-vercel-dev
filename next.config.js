@@ -10,6 +10,7 @@ const config = {
     RPC_NODE_3: process.env.RPC_NODE_3,
     GLOBAL_API: process.env.GLOBAL_API,
     EXTERNAL_API_GIC: process.env.EXTERNAL_API_GIC,
+    APP_URL: process.env.APP_URL,
   },
   async redirects() {
     return [
