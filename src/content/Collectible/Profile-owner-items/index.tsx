@@ -19,13 +19,16 @@ import TabItems from './TabItems'
 import TabOnSale from './TabOnSale'
 import TabOffers from './TabOffers'
 import ProfileUserActivities from '../ProfileUserActivities'
+import { useRouter } from 'next/router'
 
 const ProfileOwnerItems: React.FunctionComponent = () => {
+
+  const router = useRouter()
   const [showDesc, setShowDesc] = useState(false);  
 
   const toggleDesc = () => {
         showDesc ? setShowDesc(false) : setShowDesc(true);
-    }
+  }
   return (
     <Box>
       <Box
@@ -188,7 +191,7 @@ const ProfileOwnerItems: React.FunctionComponent = () => {
                 <Image src="/images/Collectible/share.png" alt="" />
               </Box>
               <Box>
-                <Button h="35px" w="160px" px={2}>
+                <Button h="35px" w="160px" px={2} onClick={() => router.push('profile-owner/edit-profile')}>
                   <Image src="/images/Collectible/edit-line.png" alt="" px={3} />
                   Edit Profile
                 </Button>
