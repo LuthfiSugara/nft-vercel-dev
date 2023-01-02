@@ -15,8 +15,10 @@ import {
   Text,
   VStack,
 } from '@chakra-ui/react'
+import { useRouter } from 'next/router'
 
 const TabOnSale: React.FunctionComponent = () => {
+  const router = useRouter()
   return (
     <Box pt={5}>
       <Box w={'full'} px={'3vw'} justifyContent="center">
@@ -76,19 +78,19 @@ const TabOnSale: React.FunctionComponent = () => {
                 </Flex>
                 <Box>
                   <Grid templateColumns="repeat(5, 1fr)" gap={6}>
-                    <GridItem>
+                    <GridItem cursor="pointer" onClick={() => router.push('profile-owner/detail-nft-onsale')}>
                       <CardownerItems />
                     </GridItem>
-                    <GridItem>
+                    <GridItem cursor="pointer" onClick={() => router.push('profile-owner/detail-nft-onsale')}>
                       <CardownerItems />
                     </GridItem>
-                    <GridItem>
+                    <GridItem cursor="pointer" onClick={() => router.push('profile-owner/detail-nft-onsale')}>
                       <CardownerItems />
                     </GridItem>
-                    <GridItem>
+                    <GridItem cursor="pointer" onClick={() => router.push('profile-owner/detail-nft-onsale')}>
                       <CardownerItems />
                     </GridItem>
-                    <GridItem>
+                    <GridItem cursor="pointer" onClick={() => router.push('profile-owner/detail-nft-onsale')}>
                       <CardownerItems />
                     </GridItem>
                   </Grid>
@@ -96,19 +98,19 @@ const TabOnSale: React.FunctionComponent = () => {
 
                 <Box py={4}>
                   <Grid templateColumns="repeat(5, 1fr)" gap={6}>
-                    <GridItem>
+                    <GridItem cursor="pointer" onClick={() => router.push('profile-owner/detail-nft-onsale')}>
                       <CardownerItems />
                     </GridItem>
-                    <GridItem>
+                    <GridItem cursor="pointer" onClick={() => router.push('profile-owner/detail-nft-onsale')}>
                       <CardownerItems />
                     </GridItem>
-                    <GridItem>
+                    <GridItem cursor="pointer" onClick={() => router.push('profile-owner/detail-nft-onsale')}>
                       <CardownerItems />
                     </GridItem>
-                    <GridItem>
+                    <GridItem cursor="pointer" onClick={() => router.push('profile-owner/detail-nft-onsale')}>
                       <CardownerItems />
                     </GridItem>
-                    <GridItem>
+                    <GridItem cursor="pointer" onClick={() => router.push('profile-owner/detail-nft-onsale')}>
                       <CardownerItems />
                     </GridItem>
                   </Grid>
@@ -116,19 +118,19 @@ const TabOnSale: React.FunctionComponent = () => {
 
                 <Box>
                   <Grid templateColumns="repeat(5, 1fr)" gap={6}>
-                    <GridItem>
+                    <GridItem cursor="pointer" onClick={() => router.push('profile-owner/detail-nft-onsale')}>
                       <CardownerItems />
                     </GridItem>
-                    <GridItem>
+                    <GridItem cursor="pointer" onClick={() => router.push('profile-owner/detail-nft-onsale')}>
                       <CardownerItems />
                     </GridItem>
-                    <GridItem>
+                    <GridItem cursor="pointer" onClick={() => router.push('profile-owner/detail-nft-onsale')}>
                       <CardownerItems />
                     </GridItem>
-                    <GridItem>
+                    <GridItem cursor="pointer" onClick={() => router.push('profile-owner/detail-nft-onsale')}>
                       <CardownerItems />
                     </GridItem>
-                    <GridItem>
+                    <GridItem cursor="pointer" onClick={() => router.push('profile-owner/detail-nft-onsale')}>
                       <CardownerItems />
                     </GridItem>
                   </Grid>
