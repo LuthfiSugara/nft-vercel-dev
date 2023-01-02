@@ -28,7 +28,9 @@ const TabItems: React.FunctionComponent = () => {
                 <HStack>
                   <Box w="480px">
                     <InputGroup>
-                      <InputLeftElement pointerEvents="none" children={<Search2Icon color="gray.300" />} size="xs" />
+                      <InputLeftElement pointerEvents="none">
+                        <Search2Icon color="gray.300" />
+                      </InputLeftElement> 
                       <Input type="text" fontSize="12px" placeholder="Search here..." />
                     </InputGroup>
                   </Box>

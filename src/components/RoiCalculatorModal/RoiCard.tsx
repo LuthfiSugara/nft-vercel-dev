@@ -113,7 +113,7 @@ const RoiCard: React.FC<RoiCardProps> = ({ earningTokenSymbol, calculatorState, 
   return (
     <RoiCardWrapper>
       <RoiCardInner>
-        <Text fontSize="12px" color="secondary" bold textTransform="uppercase">
+        <Text fontSize="12px" color="secondary" as='b' textTransform="uppercase">
           {t('ROI at current rates')}
         </Text>
         <Flex justifyContent="space-between" mt="4px" height="36px">
@@ -139,10 +139,10 @@ const RoiCard: React.FC<RoiCardProps> = ({ earningTokenSymbol, calculatorState, 
             <>
               <RoiDisplayContainer onClick={onEnterEditing}>
                 {/* Dollar sign is separate cause its not supposed to scroll with a number if number is huge */}
-                <Text fontSize="24px" bold>
+                <Text fontSize="24px" as='b'>
                   $
                 </Text>
-                <RoiDollarAmount fontSize="24px" bold fadeOut={roiUSD > TRILLION}>
+                <RoiDollarAmount fontSize="24px" fadeOut={roiUSD > TRILLION}>
                   {roiUSD.toLocaleString('en', {
                     minimumFractionDigits: roiUSD > MILLION ? 0 : 2,
                     maximumFractionDigits: roiUSD > MILLION ? 0 : 2,

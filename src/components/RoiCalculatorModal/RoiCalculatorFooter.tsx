@@ -83,35 +83,35 @@ const RoiCalculatorFooter: React.FC<RoiCalculatorFooterProps> = ({
           <Grid gridTemplateColumns="2.5fr 1fr" gridRowGap="8px" gridTemplateRows={`repeat(${gridRowCount}, auto)`}>
             {isFarm && (
               <>
-                <Text color="textSubtle" small>
+                <Text color="textSubtle" fontSize='sm'>
                   {t('APR (incl. LP rewards)')}
                 </Text>
-                <Text small textAlign="right">
+                <Text fontSize='sm' textAlign="right">
                   {displayApr}%
                 </Text>
               </>
             )}
-            <Text color="textSubtle" small>
+            <Text color="textSubtle" fontSize='sm'>
               {isFarm ? t('Base APR (LEGION yield only)') : t('APR')}
             </Text>
-            <Text small textAlign="right">
+            <Text fontSize='sm' textAlign="right">
               {apr.toFixed(2)}%
             </Text>
-            <Text color="textSubtle" small>
+            <Text color="textSubtle" fontSize='sm'>
               {t('APY (%compoundTimes%x daily compound)', {
                 compoundTimes: autoCompoundFrequency > 0 ? autoCompoundFrequency : 1,
               })}
             </Text>
-            <Text small textAlign="right">
+            <Text fontSize='sm' textAlign="right">
               {apy}%
             </Text>
             {isFarm && (
               <>
-                <Text color="textSubtle" small>
+                <Text color="textSubtle" fontSize='sm'>
                   {t('Farm Multiplier')}
                 </Text>
                 <Flex justifyContent="flex-end" alignItems="flex-end">
-                  <Text small textAlign="right" mr="4px">
+                  <Text fontSize='sm' textAlign="right" mr="4px">
                     {multiplier}
                   </Text>
                   {/* <span ref={multiplierRef}>

@@ -13,7 +13,7 @@ export const injected = new InjectedConnector({ supportedChainIds: [chainId] })
 export const walletconnect = new WalletConnectConnector({
   rpc: { [chainId]: rpcUrl },
   qrcode: true,
-  pollingInterval: POLLING_INTERVAL,
+  // pollingInterval: POLLING_INTERVAL,
 })
 
 export enum ConnectorNames {

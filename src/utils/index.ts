@@ -8,7 +8,7 @@ import { ROUTER_ADDRESS } from '../config/constants'
 import { BASE_BSC_SCAN_URLS } from '../config'
 import { TokenAddressMap } from '@app/store/lists/hooks'
 import IUniswapV2Router02ABI from '@uniswap/v2-periphery/build/IUniswapV2Router02.json'
-import log from "./remove-console";;
+import log from "./remove-console";
 
 const { abi: UniswapAbi } = IUniswapV2Router02ABI
 

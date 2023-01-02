@@ -40,13 +40,16 @@ const Index = () => {
                         <Flex gridGap={3} style={{backgroundColor: '#00000080'}} py={'2'} px={'6'} borderRadius={'full'}>
                             <Image
                                 src='/icons/logo-gic.svg'
+                                alt=""
                             />
                             <Text color={'white'} as={'b'}>GLobalInvestaCapital</Text>
                             <Image
                                 src='/icons/check-circle.svg'
+                                alt=""
                             />
                             <Image
                                 src='/icons/goto.svg'
+                                alt=""
                             />
                         </Flex>
                     </Center>
@@ -56,6 +59,7 @@ const Index = () => {
                             <Image
                                 src='/icons/check-circle.svg'
                                 boxSize={'35px'}
+                                alt=""
                             />
                         </Flex>
                     </Center>
@@ -85,7 +89,7 @@ const Index = () => {
                         <Center>
                             <Stack>
                                 <HStack>
-                                    <Image src='/icons/wgict.svg' />
+                                    <Image src='/icons/wgict.svg' alt="" />
                                     <Text fontSize='3xl' as='b'>999</Text>
                                 </HStack>
                                 <Text fontSize='md' color={'gray.500'}>Total Volume</Text>
@@ -94,7 +98,7 @@ const Index = () => {
                         <Center>
                             <Stack>
                                 <HStack>
-                                    <Image src='/icons/wgict.svg' />
+                                    <Image src='/icons/wgict.svg' alt="" />
                                 <Text fontSize='3xl' as='b'>1</Text>
                                 </HStack>
                                 <Text fontSize='md' color={'gray.500'}>FLoor Price</Text>

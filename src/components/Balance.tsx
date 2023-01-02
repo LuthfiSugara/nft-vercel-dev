@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import CountUp from 'react-countup'
+// import CountUp from 'react-countup'
 import { Text, TextProps } from '@chakra-ui/react'
 
 
@@ -29,17 +29,20 @@ const Balance: React.FC<BalanceProps> = ({
   }, [value])
 
   return (
-    <Text color={isDisabled ? 'textDisabled' : color} onClick={onClick} {...props}>
-      <CountUp
-        start={previousValue.current}
-        end={value}
-        prefix={prefix}
-        suffix={unit}
-        decimals={decimals}
-        duration={1}
-        separator=","
-      />
-    </Text>
+    <>
+      <Text color={isDisabled ? 'textDisabled' : color} onClick={onClick} {...props}>
+      {value}
+        {/* <CountUp
+          start={previousValue.current}
+          end={value}
+          prefix={prefix}
+          suffix={unit}
+          decimals={decimals}
+          duration={1}
+          separator=","
+        /> */}
+      </Text>
+    </>
   )
 }
 

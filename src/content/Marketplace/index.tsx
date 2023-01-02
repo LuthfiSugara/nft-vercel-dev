@@ -295,7 +295,7 @@ const Marketplace: React.FunctionComponent = () => {
               mt={'2vw'}
             >
               {[...Array(15)].map((_, idx) => (
-                <Grid key={idx} colSpan={1}>
+                <Grid key={idx} gap={1}>
                   <Buy />
                 </Grid>
               ))}
@@ -313,7 +313,7 @@ const Marketplace: React.FunctionComponent = () => {
               mt={'2vw'}
             >
               {[...Array(15)].map((_, idx) => (
-                <Grid key={idx} colSpan={1}>
+                <Grid key={idx} gap={1}>
                   <Auction />
                 </Grid>
               ))}

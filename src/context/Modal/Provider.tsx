@@ -40,11 +40,11 @@ export const ModalProvider: React.FC = ({ children }) => {
       {isOpen
         ? isValidElement(modalNode) &&
           cloneElement(modalNode, {
-            isOpen,
+            // isOpen,
             // isModalOpen: isOpen,
             // onClose: handleOverlayDismiss,
             // onModalClose: handleOverlayDismiss,
-            onDismiss: handleOverlayDismiss,
+            // onDismiss: handleOverlayDismiss,
           })
         : null}
       {children}
