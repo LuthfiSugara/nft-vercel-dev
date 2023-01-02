@@ -12,6 +12,7 @@ const config = {
     EXTERNAL_API_GIC: process.env.EXTERNAL_API_GIC,
     APP_URL: process.env.APP_URL,
   },
+  trailingSlash: true,
   async redirects() {
     return [
       {
