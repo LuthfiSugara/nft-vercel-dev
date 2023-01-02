@@ -17,7 +17,7 @@ const StoreCard: React.FunctionComponent<IStoreCardProps> = () => {
       borderRadius={'1.5vw'}
       boxShadow={'lg'}
       cursor={'pointer'}
-      onClick={() => router.push('/gic-store/user')}
+      onClick={() => router.push('/user')}
     >
       <GridItem
         rowSpan={6}

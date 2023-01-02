@@ -1,10 +1,10 @@
 import { Box, Button, Center, HStack, Text } from '@chakra-ui/react'
 import { ArrowForwardIcon } from '@chakra-ui/icons'
-import { useRouter } from 'next/router'
+// import { useRouter } from 'next/router'
 import { Image } from '@chakra-ui/react'
 
 const Firstbanner: React.FC = () => {
-  const router = useRouter()
+  // const router = useRouter()
   return (
     <HStack bg={'transparent'} spacing={'8%'} px={'2%'}>
       <Center w={'42%'}>
@@ -26,7 +26,7 @@ const Firstbanner: React.FC = () => {
             h={'3.5vw'}
             borderRadius={'0.5vw'}
             mt={'2vw'}
-            onClick={() => router.push('/gic-store')}
+            // onClick={() => router.push('/gic-store')}
           >
             See GIC Store
             <ArrowForwardIcon ml={'1vw'} />

@@ -15,8 +15,10 @@ import {
 import { footerItems } from '@app/mocks'
 import Link from 'next/link'
 import { ArrowForwardIcon, EmailIcon } from '@chakra-ui/icons'
+import { useRouter } from 'next/router'
 
 const Footer: React.FC<BoxProps> = (props) => {
+  const router = useRouter();
   return (
     <Box pos={'relative'} px={['5vw', '15vw']} pt={['12vw', '12vw', '7vw']} pb={['12vw', '12vw', '3.5vw']} {...props}>
       <Grid
@@ -56,7 +58,7 @@ const Footer: React.FC<BoxProps> = (props) => {
               h={['5vw', '3vw']}
               borderRadius={'0.4vw'}
               mt={['4vw', '2vw']}
-              // onClick={() => router.push('/gic-store')}
+              onClick={() => router.push('/gic-store')}
             >
               Send
               <ArrowForwardIcon ml={'1vw'} />

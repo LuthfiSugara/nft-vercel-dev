@@ -337,7 +337,7 @@ const Index = () => {
                     <SimpleGrid columns={4} spacing={10}>
                         <Box 
                             boxShadow={'base'} borderRadius={'xl'} 
-                            onClick={() => router.push('/gic-store/detail-nft')}
+                            onClick={() => router.push('/detail-nft')}
                             cursor={'pointer'}
                         >
                             <Image src='/images/nft/typeNft.png' alt='nft' w={'100%'} borderTopRadius='xl' />
@@ -369,7 +369,7 @@ const Index = () => {
                         </Box>
                         <Box 
                             boxShadow={'base'} borderRadius={'xl'} 
-                            onClick={() => router.push('/gic-store/detail-nft')}
+                            onClick={() => router.push('/detail-nft')}
                             cursor={'pointer'}
                         >
                             <Image src='/images/nft/typeNft.png' alt='nft' w={'100%'} borderTopRadius='xl' />
@@ -401,7 +401,7 @@ const Index = () => {
                         </Box>
                         <Box 
                             boxShadow={'base'} borderRadius={'xl'} 
-                            onClick={() => router.push('/gic-store/detail-nft')}
+                            onClick={() => router.push('/detail-nft')}
                             cursor={'pointer'}
                         >
                             <Image src='/images/nft/typeNft.png' alt='nft' w={'100%'} borderTopRadius='xl' />
@@ -433,7 +433,7 @@ const Index = () => {
                         </Box>
                         <Box 
                             boxShadow={'base'} borderRadius={'xl'} 
-                            onClick={() => router.push('/gic-store/detail-nft')}
+                            onClick={() => router.push('/detail-nft')}
                             cursor={'pointer'}
                         >
                             <Image src='/images/nft/typeNft.png' alt='nft' w={'100%'} borderTopRadius='xl' />

@@ -4,7 +4,6 @@ import GICStoreUser from '@app/content/GicStoreUser';
 import React from 'react'
 
 const Index = () => {
-
     return (
         <Layout>
             <SEO />

@@ -2,7 +2,7 @@ import Layout from '@app/components/Common/Layout'
 import SEO from '@app/components/Common/Seo'
 import Collectible from '@app/content/Collectible'
 
-export default function profileUserView() {
+const index = () => {
   return (
     <Layout>
       <SEO />
@@ -10,3 +10,5 @@ export default function profileUserView() {
     </Layout>
   )
 }
+
+export default index

@@ -1,13 +1,15 @@
 import React from 'react'
 import Layout from '@app/components/Common/Layout'
 import SEO from '@app/components/Common/Seo'
-import NFTDetail from '@app/content/NFTDetail'
+import DetailNFTOnSale from '@app/content/Collectible/Profile-owner-items/TabOnSale/DetailNft'
 
-export default function DetailNFT() {
+const Index = () => {
   return (
     <Layout>
       <SEO />
-      <NFTDetail />
+      <DetailNFTOnSale />
     </Layout>
   )
 }
+
+export default Index

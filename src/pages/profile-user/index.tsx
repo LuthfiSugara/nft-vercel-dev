@@ -5,7 +5,7 @@ import { Box, Center, Collapse, Flex, Heading, HStack, Image, Tab, TabList, TabP
 import Marketplace from '@app/content/Marketplace'
 import Profile_user_Activities from '@app/content/Collectible/ProfileUserActivities'
 
-export default function Index() {
+const Index = () => {
   const [showDesc, setShowDesc] = useState(false);  
 
   const toggleDesc = () => {
@@ -228,3 +228,5 @@ export default function Index() {
     </Layout>
   )
 }
+
+export default Index

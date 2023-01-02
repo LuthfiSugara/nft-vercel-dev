@@ -29,6 +29,12 @@ const config = {
   },
   images: {
     disableStaticImages: false,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'front-marketplace.legionswap.com/**',
+      },
+    ],
     domains: [
       'api.gicindonesia.com',
       'api.staging.gicindonesia.com',
@@ -40,7 +46,7 @@ const config = {
       'assets.trustwalletapp.com',
       'exchange.pancakeswap.finance',
       'front-marketplace.legionswap.com',
-      'localhost',
+      // 'localhost',
     ],
   },
 }
