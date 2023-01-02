@@ -110,7 +110,7 @@ const DetailNFTOnSale: React.FunctionComponent = () => {
                 spacing={'0.7vw'}
               >
                 <Center pos={'relative'} w={['7vw', '7vw', '1.5vw']} h={['7vw', '7vw', '1.5vw']} overflow={'hidden'}>
-                  <Image src="/icons/bnb.svg" layout="fill" objectFit="contain" alt={''} placeholder={'blur'} />
+                  <Image src="/icons/bnb.svg" objectFit="contain" alt={''} placeholder={'blur'} />
                 </Center>
                 <Text>BSC</Text>
               </HStack>

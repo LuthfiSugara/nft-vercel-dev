@@ -3,7 +3,7 @@
     "target": "es5",
     "module": "ESNext",
     "strict": false,
-    "checkJs": false,
+    "checkJs": true,
     "allowSyntheticDefaultImports": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,

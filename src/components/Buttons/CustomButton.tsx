@@ -1,14 +1,16 @@
 import { Box } from '@chakra-ui/react'
 import React from 'react'
 
-interface CustomButtonPops {
-  label: string
-  width: String
-  height: string
-  color: string
-}
+// interface CustomButtonPops {
+//   label: string
+//   width: string
+//   height: string
+//   color: string
+// }
 
-const CustomButton = ({}: CustomButtonPops) => {
+const CustomButton = (
+  // {label, width, height, color}: CustomButtonPops
+  ) => {
   return <Box></Box>
 }
 

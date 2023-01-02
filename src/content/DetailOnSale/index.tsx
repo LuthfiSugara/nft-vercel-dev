@@ -110,7 +110,7 @@ const DetailOnSale: React.FunctionComponent = () => {
                 spacing={'0.7vw'}
               >
                 <Center pos={'relative'} w={['7vw', '7vw', '1.5vw']} h={['7vw', '7vw', '1.5vw']} overflow={'hidden'}>
-                  <Image src="/icons/bnb.svg" layout="fill" objectFit="contain" alt={''} placeholder={'blur'} />
+                  <Image src="/icons/bnb.svg"  objectFit="contain" alt={''} placeholder={'blur'} />
                 </Center>
                 <Text>BSC</Text>
               </HStack>
@@ -128,7 +128,7 @@ const DetailOnSale: React.FunctionComponent = () => {
           </Text>
           <HStack spacing={'0.5vw'}>
             <Center pos={'relative'} w={['7vw', '7vw', '2.2vw']} h={['7vw', '7vw', '2.2vw']} overflow={'hidden'}>
-              <Image src="/icons/wgict.svg" layout="fill" objectFit="contain" alt={''} placeholder={'blur'} />
+              <Image src="/icons/wgict.svg" objectFit="contain" alt={''} placeholder={'blur'} />
             </Center>
             <Balance
               value={100}
