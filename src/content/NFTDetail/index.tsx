@@ -113,7 +113,7 @@ const NFTDetail: React.FunctionComponent = () => {
                 spacing={'0.7vw'}
               >
                 <Center pos={'relative'} w={['7vw', '7vw', '1.5vw']} h={['7vw', '7vw', '1.5vw']} overflow={'hidden'}>
-                  <Image src='/icons/bnb.svg' layout="fill" objectFit="contain" alt={''} placeholder={'blur'} />
+                  <Image src='/icons/bnb.svg' objectFit="contain" alt={''} placeholder={'blur'} />
                 </Center>
                 <Text>BSC</Text>
               </HStack>
@@ -130,7 +130,7 @@ const NFTDetail: React.FunctionComponent = () => {
           </Text>
           <HStack spacing={'0.5vw'}>
             <Center pos={'relative'} w={['7vw', '7vw', '2.2vw']} h={['7vw', '7vw', '2.2vw']} overflow={'hidden'}>
-              <Image src='/icons/wgict.svg' layout="fill" objectFit="contain" alt={''} placeholder={'blur'} />
+              <Image src='/icons/wgict.svg' objectFit="contain" alt={''} placeholder={'blur'} />
             </Center>
             <Balance
               value={100}
@@ -282,7 +282,7 @@ const NFTDetail: React.FunctionComponent = () => {
               <AccordionButton fontSize={'2vw'} py={'1.5vw'} px={'3vw'} bgColor={'gicv.gray.300'}>
                 <Box flex="1" textAlign="left">
                   <HStack spacing={'1vw'}>
-                    <Image src='/icons/activity.svg' />
+                    <Image src='/icons/activity.svg' alt='' />
                     <Text fontSize={'1.45vw'}>Activity History</Text>
                   </HStack>
                 </Box>
@@ -484,7 +484,7 @@ const NFTDetail: React.FunctionComponent = () => {
             <AccordionButton fontSize={'2vw'} py={'1.5vw'} px={'3vw'} bgColor={'gicv.gray.300'}>
               <Box flex="1" textAlign="left">
                 <HStack spacing={'1vw'}>
-                  <Image src='/icons/dashboard.svg' />
+                  <Image src='/icons/dashboard.svg' alt=''  />
                   <Text fontSize={'1.45vw'}>More from this collection</Text>
                 </HStack>
               </Box>

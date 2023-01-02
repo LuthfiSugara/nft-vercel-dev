@@ -203,7 +203,7 @@ export default function Index() {
       </Box>
       <Box>
         <Tabs variant='unstyled'>
-          <Flex justifyContent="center" alignItems="center" TextAlign="center" my={10}>
+          <Flex justifyContent="center" alignItems="center" my={10}>
             <TabList>
               <Tab fontSize="14px" fontWeight="bold" _selected={{ color: '#000000', borderBottom:'2px', borderColor: '#000000' }}>
                 Items

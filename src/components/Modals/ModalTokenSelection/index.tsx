@@ -21,17 +21,17 @@ import ModalTokenSelectionDefaultView from './components/ModalTokenSelectionDefa
 import { InjectedModalProps } from '@app/context'
 import { Currency } from '@aulyaaryansyah/legionswap-sdk-mainnet'
 import { useTranslation } from '@app/context/Localization'
-import dynamic from 'next/dynamic'
-import ComponentLoader from '@app/components/Utils/ComponentLoader'
+// import dynamic from 'next/dynamic'
+// import ComponentLoader from '@app/components/Utils/ComponentLoader'
 
-const ModalTokenSelectionManageView = dynamic(() => import('./components/ModalTokenSelectionManageView'), {
-  ssr: false,
-  loading: ComponentLoader,
-})
-const ModalTokenSelectionImportView = dynamic(() => import('./components/ModalTokenSelectionImportView'), {
-  ssr: false,
-  loading: ComponentLoader,
-})
+// const ModalTokenSelectionManageView = dynamic(() => import('./components/ModalTokenSelectionManageView'), {
+//   ssr: false,
+//   loading: ComponentLoader,
+// })
+// const ModalTokenSelectionImportView = dynamic(() => import('./components/ModalTokenSelectionImportView'), {
+//   ssr: false,
+//   loading: ComponentLoader,
+// })
 
 export enum ModalTokenSelectionView {
   DEFAULT = 'DEFAULT',
@@ -59,7 +59,7 @@ export default function ModalTokenSelection({
   const { chainId } = useActiveWeb3React()
   const [searchQuery, setSearchQuery] = useState('')
   const [modalView, setModalView] = useState(ModalTokenSelectionView.DEFAULT)
-  const [importToken, setImportToken] = useState()
+  // const [importToken, setImportToken] = useState()
   const onSelect = useCallback(
     (token) => {
       onDismiss()
@@ -115,7 +115,7 @@ export default function ModalTokenSelection({
               filteredSortedTokens={filteredSortedTokens}
               searchTokenIsAdded={searchTokenIsAdded}
               onUserSearchToken={setSearchQuery}
-              setImportToken={setImportToken}
+              setImportToken={"setImportToken"}
               selectedCurrency={selectedCurrency}
               setModalView={setModalView}
               searchToken={searchToken}
@@ -126,9 +126,11 @@ export default function ModalTokenSelection({
               showETH={showETH}
             />
           ) : modalView === ModalTokenSelectionView.IMPORT ? (
-            <ModalTokenSelectionImportView token={importToken} onTokenSelect={onSelect} setModalView={setModalView} />
+            <Text>ModalTokenSelectionView</Text>
+            // <ModalTokenSelectionImportView token={importToken} onTokenSelect={onSelect} setModalView={setModalView} />
           ) : (
-            <ModalTokenSelectionManageView setModalView={setModalView} onTokenSelect={onSelect} />
+            <Text>ModalTokenSelectionView</Text>
+            // <ModalTokenSelectionManageView setModalView={setModalView} onTokenSelect={onSelect} />
           )}
         </ModalBody>
         {!(modalView === ModalTokenSelectionView.MANAGE) && (

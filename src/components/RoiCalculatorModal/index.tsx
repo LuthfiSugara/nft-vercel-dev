@@ -143,7 +143,7 @@ const RoiCalculatorModal: React.FC<RoiCalculatorModalProps> = ({
     >
       <ScrollableContainer>
         <Flex flexDirection="column" mb="8px">
-          <Text color="secondary" bold fontSize="12px" textTransform="uppercase">
+          <Text color="secondary" as={'b'} fontSize="12px" textTransform="uppercase">
             {t('%asset% staked', { asset: stakingTokenSymbol })}
           </Text>
           {/* <BalanceInput
@@ -192,7 +192,7 @@ const RoiCalculatorModal: React.FC<RoiCalculatorModalProps> = ({
             </span> */}
             {/* {tooltipVisible && tooltip} */}
           </Flex>
-          <Text mt="24px" color="secondary" bold fontSize="12px" textTransform="uppercase">
+          <Text mt="24px" color="secondary" as={'b'} fontSize="12px" textTransform="uppercase">
             {t('Staked for')}
           </Text>
           {/* <FullWidthButtonMenu activeIndex={stakingDuration} onItemClick={setStakingDuration} scale="sm">
@@ -204,7 +204,7 @@ const RoiCalculatorModal: React.FC<RoiCalculatorModalProps> = ({
           </FullWidthButtonMenu> */}
           {autoCompoundFrequency === 0 && (
             <>
-              <Text mt="24px" color="secondary" bold fontSize="12px" textTransform="uppercase">
+              <Text mt="24px" color="secondary" as={'b'} fontSize="12px" textTransform="uppercase">
                 {t('Compounding every')}
               </Text>
               <Flex alignItems="center">

@@ -104,7 +104,6 @@ const PartnerForm = () => {
           <Text>Tell us more about your project</Text>
         </HStack>
         <Textarea
-          type="text"
           bgColor={'gicv.secondary'}
           borderRadius={'0.4vw'}
           borderColor={'lightgray'}
@@ -242,7 +241,6 @@ const PartnerForm = () => {
           <Text>Project description</Text>
         </HStack>
         <Textarea
-          type="text"
           bgColor={'gicv.secondary'}
           borderRadius={'0.4vw'}
           borderColor={'lightgray'}

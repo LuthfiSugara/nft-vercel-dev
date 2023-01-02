@@ -13,7 +13,7 @@ export default function LangSwitcher() {
       </MenuButton>
       <MenuList maxH="240px" overflowY="auto" bg="gicv.dark" sx={withCustomScrollBar('6px')} border="none">
         {Object.entries(languages).map(([locale, lang]) => (
-          <MenuItem onClick={() => setLanguage(lang)} size="sm" variant="ghost" key={`language-${locale}`}>
+          <MenuItem onClick={() => setLanguage(lang)} key={`language-${locale}`}>
             {lang.language}
           </MenuItem>
         ))}

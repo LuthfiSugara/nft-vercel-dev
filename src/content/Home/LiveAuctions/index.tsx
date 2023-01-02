@@ -34,7 +34,7 @@ const LiveAuctions: React.FunctionComponent<ILiveAuctionsProps> = () => {
       </HStack>
       <Grid templateColumns={'repeat(5,1fr)'} templateRows={'repeat(2,1fr)'} gap={'2vw'} w={'full'} mt={'2vw'}>
         {[...Array(10)].map((_, idx) => (
-          <Grid key={idx} colSpan={1}>
+          <Grid key={idx} gap={2}>
             <LiveAuction />
           </Grid>
         ))}

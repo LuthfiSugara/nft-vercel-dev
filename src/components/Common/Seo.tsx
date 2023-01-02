@@ -41,10 +41,10 @@ export default function SEO({ description, title, favicon, canonical, image, chi
       {canonical && (
         <>
           <meta property="og:url" content={canonical} />
-          <link property="canonical" href={canonical} />
+          <link rel="canonical" href={canonical} />
         </>
       )}
-      <link rel="icon" href={favicon || '/favicon.ico'} />
+      <link rel="shortcut icon" href={favicon || '/favicon.ico'} />
       {children}
     </Head>
   )

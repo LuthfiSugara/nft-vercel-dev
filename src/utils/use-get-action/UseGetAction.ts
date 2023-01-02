@@ -1,16 +1,18 @@
 import log from "../remove-console";
 
 
-const UseGetAction = (url: string, queries: object) => {
+const UseGetAction = (url: string, queries: any) => {
+    let tmpUrl = url;
     try{
         let qr = '?';
-        url = url;
+        // url = url;
         if(queries != undefined){
-            for(let query in queries){
+            for(const query in queries){
                 qr += `${query}=${queries[query]}&`
             }
-            url += qr;
+            tmpUrl += qr;
         }
+        log(tmpUrl);
 
         // const response = await API.get(url);
         // console.log("response get : ", response.data);

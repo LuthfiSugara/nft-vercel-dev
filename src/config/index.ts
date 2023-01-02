@@ -1,5 +1,5 @@
 import { ChainId } from '@aulyaaryansyah/legionswap-sdk-mainnet'
-import BigNumber from 'bignumber.js/bignumber'
+import BigNumber from 'bignumber.js'
 import { BIG_TEN } from '@app/utils/bigNumber'
 
 BigNumber.config({

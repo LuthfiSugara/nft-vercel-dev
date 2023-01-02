@@ -46,7 +46,6 @@ const Index = () => {
                 backgroundRepeat="no-repeat"
                 backgroundSize="100%"
                 objectFit="cover"
-                align="center"
               >
                 <Button size="xs" my="40px" color="white" colorScheme="blackAlpha" fontSize="10px">
                   Change

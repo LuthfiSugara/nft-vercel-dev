@@ -120,7 +120,7 @@ const ProfileOwnerItems: React.FunctionComponent = () => {
         padding="20px 50px"
       >
         <Box>
-          <Heading color="black" size="md" textTransform="uppercase" align="center">
+          <Heading color="black" size="md" textTransform="uppercase">
             120
           </Heading>
           <Text color="#6C757D" pt="1" fontSize="sm">
@@ -129,7 +129,7 @@ const ProfileOwnerItems: React.FunctionComponent = () => {
         </Box>
 
         <Box pl={12}>
-          <Heading color="black" size="md" textTransform="uppercase" align="center">
+          <Heading color="black" size="md" textTransform="uppercase">
             120
           </Heading>
           <Text color="#6C757D" pt="1" fontSize="sm">
@@ -138,7 +138,7 @@ const ProfileOwnerItems: React.FunctionComponent = () => {
         </Box>
 
         <Box pl={12}>
-          <Heading color="black" size="md" textTransform="uppercase" align="center">
+          <Heading color="black" size="md" textTransform="uppercase">
             <HStack>
               <Image borderRadius="full" boxSize="30px" src="/images/Token/wgict.png" alt="Dan Abramov" />
               <Text>999</Text>
@@ -150,7 +150,7 @@ const ProfileOwnerItems: React.FunctionComponent = () => {
         </Box>
 
         <Box pl={12}>
-          <Heading color="black" size="md" textTransform="uppercase" align="center">
+          <Heading color="black" size="md" textTransform="uppercase">
             <HStack>
               <Image borderRadius="full" boxSize="30px" src="/images/Token/wgict.png" alt="Dan Abramov" />
               <Text>1</Text>

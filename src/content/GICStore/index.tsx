@@ -1,12 +1,15 @@
-import { Box, Center, Image, SimpleGrid, Text } from '@chakra-ui/react'
+import { Box, Center, SimpleGrid, Text } from '@chakra-ui/react'
+import Image from 'next/image'
+import BannerGicStore from '@public/images/GICStore/gic-store-banner-bg.png'
+
 import StoreCard from './StoreCard'
 
 const GICStore: React.FunctionComponent = () => {
   return (
     <Box>
       <Box height={'30vw'}>
-        <Box position={'absolute'} w={'full'}>
-          <Image src={`${process.env.APP_URL}/images/GICStore/gic-store-banner-bg.png`} placeholder={'blur'} sizes={'100vw'} alt={''} />
+        <Box position={'relative'} w={'100%'}>
+          <Image src={BannerGicStore} alt='' layout="responsive" objectFit="cover" />
         </Box>
       </Box>
       <Box textAlign={'center'} pt={'2vw'} px={'15vw'}>

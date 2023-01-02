@@ -45,5 +45,3 @@ export const getFarmApr = (
   const lpRewardsApr = lpAprs[farmAddress?.toLocaleLowerCase()] ?? 0
   return { legionRewardsApr: legionRewardsAprAsNumber, lpRewardsApr }
 }
-
-export default null
