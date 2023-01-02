@@ -32,9 +32,9 @@ import { FaRegHeart } from 'react-icons/fa'
 import { HiOutlineEye, HiOutlineShare } from 'react-icons/hi'
 import { IoDocumentTextOutline } from 'react-icons/io5'
 import { withCustomScrollBar } from '@app/config/theme/withCustomScrollbar'
+import Balance from '@app/components/Balance'
 
-const DetailNFTOnSale: React.FunctionComponent = () => {
-  
+const DetailOnSale: React.FunctionComponent = () => {
   const [showDetail, setShowDetail] = useState(true)
 
   const toggleDetail = () => {
@@ -121,10 +121,45 @@ const DetailNFTOnSale: React.FunctionComponent = () => {
             </HStack>
           </Box>
         </Box>
+
         <Box pl={'3.5vw'}>
-          <HStack spacing={'2vw'} mt={'4vw'}>
-            <Button colorScheme={'primary'} fontSize={'1.2vw'} w={'full'} h={'3.5vw'} borderRadius={'0.4vw'}>
-              Sell NFT
+          <Text fontSize={'1.45vw'} fontWeight={'semibold'}>
+            Current Price
+          </Text>
+          <HStack spacing={'0.5vw'}>
+            <Center pos={'relative'} w={['7vw', '7vw', '2.2vw']} h={['7vw', '7vw', '2.2vw']} overflow={'hidden'}>
+              <Image src="/icons/wgict.svg" layout="fill" objectFit="contain" alt={''} placeholder={'blur'} />
+            </Center>
+            <Balance
+              value={100}
+              decimals={0}
+              textAlign={'center'}
+              fontSize={['4vw', '4vw', '2.5vw']}
+              fontWeight={'extrabold'}
+              mx={['2vw', '2vw', '0.3vw']}
+            />
+            <Balance
+              value={100 * 0.987}
+              decimals={1}
+              prefix={'= $'}
+              fontSize={'1vw'}
+              fontWeight={'bold'}
+              color={'gicv.gray.600'}
+            />
+          </HStack>
+          <HStack spacing={'2vw'} mt={'1.5vw'}>
+            <Button colorScheme={'red'} fontSize={'1.2vw'} w={'full'} h={'3vw'} borderRadius={'0.4vw'}>
+              Cencel Sell
+            </Button>
+            <Button
+              variant="outline"
+              colorScheme={'blackAlpha'}
+              fontSize={'1.2vw'}
+              w={'full'}
+              h={'3vw'}
+              borderRadius={'0.4vw'}
+            >
+              Edit Price
             </Button>
             {/* <Button
               color={'gicv.gray.900'}
@@ -521,4 +556,4 @@ const DetailNFTOnSale: React.FunctionComponent = () => {
   )
 }
 
-export default DetailNFTOnSale
+export default DetailOnSale
