@@ -1,4 +1,4 @@
-import { Box, Image } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 import * as React from 'react'
 import Banner from './Banner'
 import FeaturedCollections from './FeaturedCollections'
@@ -7,13 +7,14 @@ import LiveAuctions from './LiveAuctions'
 import TopBuyers from './TopBuyers'
 import TopSellers from './TopSellers'
 import PartnerForm from './PartnerForm'
+import Image from 'next/image'
 
 const Home: React.FunctionComponent = () => {
   return (
     <Box>
       <Box height={'50vw'}>
         <Box position={'absolute'} w={'full'}>
-          <Image src='/images/Landing/landing-banner-bg.png' sizes={'100vw'} alt={''} />
+          <Image src={`${process.env.APP_URL}/images/Landing/landing-banner-bg.png`} layout="responsive" objectFit="cover" sizes={'100vw'} alt={''} />
         </Box>
         <Banner />
       </Box>

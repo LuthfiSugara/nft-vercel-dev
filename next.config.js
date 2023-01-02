@@ -32,7 +32,7 @@ const config = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'front-marketplace.legionswap.com/**',
+        hostname: 'front-marketplace.legionswap.com',
       },
     ],
     domains: [
