@@ -208,7 +208,9 @@ const Index = () => {
         <Flex w="60%" margin="auto">
           <Flex w="45%">
             <InputGroup>
-              <InputLeftElement pointerEvents="none" children={<LinkIcon color="#6C757D" />} />
+              <InputLeftElement pointerEvents="none" >
+                <LinkIcon color="#6C757D" />
+              </InputLeftElement>
               <Input fontSize={12} type="text" placeholder="Example.com" />
             </InputGroup>
           </Flex>

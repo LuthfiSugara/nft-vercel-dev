@@ -9,7 +9,7 @@ const GICStore: React.FunctionComponent = () => {
     <Box>
       <Box height={'30vw'}>
         <Box position={'relative'} w={'100%'}>
-          <Image src={BannerGicStore} alt='' layout="responsive" objectFit="cover" />
+          <Image src={BannerGicStore} alt='' layout="responsive" objectFit="cover" width='100%' height='30vh' />
         </Box>
       </Box>
       <Box textAlign={'center'} pt={'2vw'} px={'15vw'}>
