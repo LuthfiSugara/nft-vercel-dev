@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3003",
-    "build": "next build",
-    "start": "next start",
+    "dev": "next-script export NODE_OPTIONS=--openssl-legacy-provider; next dev -p 3003",
+    "build": "next-script export NODE_OPTIONS=--openssl-legacy-provider; next build",
+    "start": "next-script export NODE_OPTIONS=--openssl-legacy-provider; next start",
     "lint": "next lint",
     "lint:check": "eslint \"./src/**/*.{js,ts,tsx,jsx}\"",
     "deploy:preview": "vercel",
