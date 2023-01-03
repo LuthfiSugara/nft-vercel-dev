@@ -8,13 +8,14 @@ import TopBuyers from './TopBuyers'
 import TopSellers from './TopSellers'
 import PartnerForm from './PartnerForm'
 import Image from 'next/image'
+import LandingHome from '@public/images/Landing/landing-banner-bg.png'
 
 const Home: React.FunctionComponent = () => {
   return (
     <Box>
       <Box height={'50vw'}>
         <Box position={'absolute'} w={'full'}>
-          <Image src={`${process.env.APP_URL}/images/Landing/landing-banner-bg.png`} layout="responsive" objectFit="cover" sizes={'100vw'} alt={''} />
+          <Image src={LandingHome} layout="responsive" objectFit="cover" sizes={'100vw'} alt={''} />
         </Box>
         <Banner />
       </Box>

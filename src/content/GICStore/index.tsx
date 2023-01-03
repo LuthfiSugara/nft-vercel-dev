@@ -1,6 +1,6 @@
 import { Box, Center, SimpleGrid, Text } from '@chakra-ui/react'
 import Image from 'next/image'
-import BannerGicStore from '/public/images/GICStore/gic-store-banner-bg.png'
+import BannerGicStore from '@public/images/GICStore/gic-store-banner-bg.png'
 
 import StoreCard from './StoreCard'
 
